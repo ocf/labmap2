@@ -1,0 +1,14 @@
+data_generator.py
+
+This script queries the Prometheus server which hosts all the relevant data regarding desktop 'up'
+status as well as logged in users.
+It produces a JSON file containing the mentioned information so that it can be queried by the frontend
+and processed into a visual form for display
+
+logged_in_users.sh
+This shell script sits on every system so that the list of logged in users can be grabbed and then
+packaged with the rest of the device's metrics when queried by Prometheus.
+To keep this information up to date, the script is ran periodically by a cronjob (debian) or by a 
+systemd timer (NixOS).
+The output is a '.prom' file which is information specially formatted for PromQL queries. It is placed
+in a /textfile-collector folder which is checked everytime node exporter refreshes with new information.
