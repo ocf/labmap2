@@ -1,8 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=4 format=4 uid="uid://dgy3vf0xjb874"]
 
-[sub_resource type="TileSet" id="TileSet_xce7g"]
+[ext_resource type="Texture2D" uid="uid://cpld678exjxcg" path="res://art/Sprite-0006-sheet.png" id="1_p0ijt"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kfve"]
+resource_name = "Floor Tile"
+texture = ExtResource("1_p0ijt")
+texture_region_size = Vector2i(128, 72)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -4)
+
+[sub_resource type="TileSet" id="TileSet_ssnwc"]
 tile_shape = 1
-tile_size = Vector2i(128, 48)
+tile_size = Vector2i(128, 64)
+sources/0 = SubResource("TileSetAtlasSource_5kfve")
 
-[node name="FloorMap" type="TileMapLayer"]
-tile_set = SubResource("TileSet_xce7g")
+[node name="Root" type="Node2D"]
+
+[node name="Floor" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD///7/AAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAP7/AAAAAAAAAAD///3/AAAAAAAAAAD+////AAAAAAAAAAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wIAAAAAAAAAAAD//wMAAAAAAAAAAAD9////AAAAAAAAAAD+//7/AAAAAAAAAAD+//3/AAAAAAAAAAD///z/AAAAAAAAAAD///v/AAAAAAAAAAAAAPz/AAAAAAAAAAAAAP3/AAAAAAAAAAABAP7/AAAAAAAAAAABAP//AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_ssnwc")

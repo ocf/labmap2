@@ -1,4 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729563473
-floor_map.tscn::PackedScene::7631678058768377369::1729220545::0::1::::<><>::
-icon.svg::CompressedTexture2D::8019015828006172325::1729218193::1729563475::1::::<><>::
+::res://::1729575527
+floor_map.tscn::PackedScene::7631678058768377369::1729574447::0::1::::<><>::uid://cpld678exjxcg::::res://art/Sprite-0006-sheet.png
+icon.svg::CompressedTexture2D::8019015828006172325::1729573371::1729573558::1::::<><>::
+::res://art/::1729573558
+Sprite-0006-sheet.png::CompressedTexture2D::5848621419779304734::1729573481::1729573558::1::::<><>::

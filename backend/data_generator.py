@@ -2,7 +2,7 @@ import requests
 import json
 
 # Prometheus server URL
-prometheus_url = "http://prometheus.ocf.berkeley.edu:9090/api/v1/query"
+prometheus_url = "http://10.0.0.224:9090/api/v1/query"
 
 # Prometheus queries
 up_query = 'up'
