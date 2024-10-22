@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgy3vf0xjb874"]
+
+[sub_resource type="TileSet" id="TileSet_xce7g"]
+tile_shape = 1
+tile_size = Vector2i(128, 48)
+
+[node name="FloorMap" type="TileMapLayer"]
+tile_set = SubResource("TileSet_xce7g")

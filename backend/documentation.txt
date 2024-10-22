@@ -6,9 +6,18 @@ It produces a JSON file containing the mentioned information so that it can be q
 and processed into a visual form for display
 
 logged_in_users.sh
+
 This shell script sits on every system so that the list of logged in users can be grabbed and then
 packaged with the rest of the device's metrics when queried by Prometheus.
 To keep this information up to date, the script is ran periodically by a cronjob (debian) or by a 
 systemd timer (NixOS).
 The output is a '.prom' file which is information specially formatted for PromQL queries. It is placed
 in a /textfile-collector folder which is checked everytime node exporter refreshes with new information.
+
+node_exporter_modification.nix
+
+This nix config is the bare bones minimum requirements for a device to be functional and export the
+correct metrics to Prometheus. It includes Node Exporter and a systemd setup with logged_in_users.sh,
+configured to create all the necessary directories and files to achieve the goal of creating the
+'node_logged_in_user' metric. In short, the .sh script runs as a systemd service on a systemd timer to
+produce the metric.
