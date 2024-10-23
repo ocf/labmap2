@@ -1,22 +1,78 @@
-[gd_scene load_steps=4 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=9 format=4 uid="uid://dgy3vf0xjb874"]
 
-[ext_resource type="Texture2D" uid="uid://cpld678exjxcg" path="res://art/Sprite-0006-sheet.png" id="1_p0ijt"]
+[ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
+[ext_resource type="Texture2D" uid="uid://nernh4erw8au" path="res://art/table_sheet.png" id="2_7vs56"]
+[ext_resource type="Texture2D" uid="uid://c7hy84ujceanw" path="res://art/wall_sheet.png" id="3_85vmw"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kfve"]
-resource_name = "Floor Tile"
-texture = ExtResource("1_p0ijt")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
+resource_name = "Floor Tiles"
+texture = ExtResource("1_eg3gw")
 texture_region_size = Vector2i(128, 72)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -4)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -4)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -4)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, -4)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ai0tr"]
+resource_name = "Table Sheet"
+texture = ExtResource("2_7vs56")
+texture_region_size = Vector2i(106, 81)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(11, 19)
+0:0/0/z_index = 1
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(-11, -4)
+1:0/0/z_index = 1
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(-11, -2)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(11, 19)
 
 [sub_resource type="TileSet" id="TileSet_ssnwc"]
 tile_shape = 1
 tile_size = Vector2i(128, 64)
-sources/0 = SubResource("TileSetAtlasSource_5kfve")
+sources/2 = SubResource("TileSetAtlasSource_ai0tr")
+sources/1 = SubResource("TileSetAtlasSource_dqocb")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31kon"]
+resource_name = "Wall Sheet"
+texture = ExtResource("3_85vmw")
+texture_region_size = Vector2i(64, 64)
+0:0/size_in_atlas = Vector2i(1, 3)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(32, 16)
+0:0/0/z_index = -1
+1:0/size_in_atlas = Vector2i(1, 3)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(32, 48)
+1:0/0/z_index = -1
+
+[sub_resource type="TileSet" id="TileSet_lrubo"]
+tile_shape = 1
+tile_size = Vector2i(128, 64)
+sources/0 = SubResource("TileSetAtlasSource_31kon")
 
 [node name="Root" type="Node2D"]
+position = Vector2(0, 32)
 
 [node name="Floor" type="TileMapLayer" parent="."]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAD///7/AAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAP7/AAAAAAAAAAD///3/AAAAAAAAAAD+////AAAAAAAAAAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wIAAAAAAAAAAAD//wMAAAAAAAAAAAD9////AAAAAAAAAAD+//7/AAAAAAAAAAD+//3/AAAAAAAAAAD///z/AAAAAAAAAAD///v/AAAAAAAAAAAAAPz/AAAAAAAAAAAAAP3/AAAAAAAAAAABAP7/AAAAAAAAAAABAP//AAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD//wYAAQAAAAAAAAD7/wAAAQACAAAAAAADAP7/AQADAAAAAAADAP//AQADAAAAAAADAAAAAQAAAAAAAAACAAEAAQAAAAAAAAACAAIAAQAAAAAAAAABAAMAAQAAAAAAAAABAAQAAQAAAAAAAAAAAAMAAQAAAAAAAAACAAAAAQAAAAAAAAACAP//AQAAAAAAAAABAAEAAQAAAAAAAAABAAIAAQAAAAAAAAAAAAQAAQAAAAAAAAD//wUAAQAAAAAAAAD//wQAAQAAAAAAAAD//wMAAQAAAAAAAAD+/wUAAQAAAAAAAAD+/wQAAQAAAAAAAAD+/wMAAQAAAAAAAAD9/wMAAQAAAAAAAAD+/wIAAQAAAAAAAAD9/wEAAQAAAAAAAAD9/wIAAQAAAAAAAAD8/wEAAQAAAAAAAAD8/wAAAQAAAAAAAAD7////AQAAAAAAAAD8//7/AQAAAAAAAAD8////AQAAAAAAAAD8//z/AQACAAAAAAD8//3/AQAAAAAAAAD9//7/AQAAAAAAAAD9////AQAAAAAAAAD9/wAAAQAAAAAAAAD+/wAAAQAAAAAAAAD+/wEAAQAAAAAAAAD//wAAAQAAAAAAAAD//wIAAQAAAAAAAAD//wEAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAAAAQAAAAAAAAABAP//AQAAAAAAAAACAP7/AQAAAAAAAAACAP3/AQADAAAAAAACAPz/AQADAAAAAAABAPv/AQADAAAAAAABAPz/AQAAAAAAAAAAAP3/AQAAAAAAAAD///3/AQAAAAAAAAD///7/AQAAAAAAAAD/////AQAAAAAAAAAAAP7/AQAAAAAAAAABAP3/AQAAAAAAAAAAAPz/AQAAAAAAAAAAAPv/AQAAAAAAAAABAPr/AQADAAAAAAABAP7/AQAAAAAAAAAAAP//AQAAAAAAAAAAAAAAAQAAAAAAAAD+////AQAAAAAAAAD9//3/AQAAAAAAAAD9//z/AQAAAAAAAAD9//r/AQACAAAAAAD9//n/AQACAAAAAAD+//j/AQACAAAAAAD+//f/AQACAAAAAAD+//n/AQAAAAAAAAD+//r/AQAAAAAAAAD///j/AQAAAAAAAAD///f/AQADAAAAAAD///b/AQABAAAAAAD7//7/AQACAAAAAAD7//3/AQACAAAAAAD8//v/AQACAAAAAAD+//z/AQAAAAAAAAD+//v/AQAAAAAAAAD///r/AQAAAAAAAAD///n/AQAAAAAAAAAAAPr/AQAAAAAAAAD///v/AQAAAAAAAAD///z/AQAAAAAAAAD+//3/AQAAAAAAAAAAAPj/AQADAAAAAAAAAPn/AQADAAAAAAAAAAUAAQAAAAAAAAAAAAYAAQAAAAAAAAD//wcAAQAAAAAAAAD9//v/AQAAAAAAAAD+//7/AQAAAAAAAAA=")
 tile_set = SubResource("TileSet_ssnwc")
+
+[node name="Tables" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAAAAEAAgAAAAAAAAAAAAAAAgABAAAAAAADAP//AgACAAAAAAADAAAAAgACAAAAAAACAAEAAgACAAAAAAACAAIAAgACAAAAAAABAAMAAgABAAAAAAD+//z/AgABAAAAAAAAAAUAAgACAAAAAAAAAAYAAgACAAAAAAD//wcAAgABAAAAAAD7//7/AgABAAAAAAD8//v/AgAAAAAAAAD7//3/AgACAAAAAAD+//v/AgACAAAAAAD///r/AgACAAAAAAD///n/AgACAAAAAAAAAPj/AgACAAAAAAD///z/AgAAAAEAAAD///v/AgAAAAEAAAAAAPr/AgAAAAEAAAAAAPn/AgAAAAEAAAABAAAAAgAAAAEAAAABAP//AgAAAAEAAAACAP7/AgAAAAEAAAACAP3/AgAAAAEAAAAAAP//AgACAAAAAAABAP7/AgACAAAAAAABAP3/AgACAAAAAAACAPz/AgACAAAAAAD+//3/AgAAAAAAAAA=")
+tile_set = SubResource("TileSet_ssnwc")
+
+[node name="Walls" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD7//z/AAAAAAAAAAD7//v/AAAAAAAAAAD8//r/AAAAAAAAAAD8//n/AAAAAAAAAAD9//j/AAAAAAAAAAD9//f/AAAAAAAAAAD+//b/AAAAAAAAAAD+//X/AAAAAAAAAAD///T/AAAAAAAAAAD///X/AAABAAAAAAAAAPb/AAABAAAAAAAAAPf/AAABAAAAAAABAPj/AAABAAAAAAABAPn/AAABAAAAAAACAPr/AAABAAAAAAACAPv/AAABAAAAAAADAPz/AAABAAAAAAADAP3/AAABAAAAAAAEAP7/AAABAAAAAAA=")
+tile_set = SubResource("TileSet_lrubo")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-32, -64)
