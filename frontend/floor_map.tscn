@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=10 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
 [ext_resource type="Texture2D" uid="uid://nernh4erw8au" path="res://art/table_sheet.png" id="2_7vs56"]
 [ext_resource type="Texture2D" uid="uid://c7hy84ujceanw" path="res://art/wall_sheet.png" id="3_85vmw"]
+[ext_resource type="Script" path="res://scripts/devices.gd" id="4_w6f35"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
 resource_name = "Floor Tiles"
@@ -90,6 +91,7 @@ tile_set = SubResource("TileSet_ssnwc")
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD+//3/AgABAAEAAAD///z/AgABAAEAAAD///v/AgABAAEAAAAAAPr/AgABAAEAAAAAAPn/AgABAAEAAAD+//z/AgADAAEAAAD+//v/AgADAAEAAAD///r/AgADAAEAAAD///n/AgADAAEAAAAAAPj/AgADAAEAAAAAAAEAAgACAAEAAAABAAAAAgACAAEAAAABAP//AgACAAEAAAACAP7/AgACAAEAAAACAP3/AgACAAEAAAAAAAAAAgAEAAEAAAAAAP//AgAEAAEAAAABAP7/AgAEAAEAAAABAP3/AgAEAAEAAAACAPz/AgAEAAEAAAABAAMAAgAEAAEAAAACAAIAAgAEAAEAAAACAAEAAgAEAAEAAAADAAAAAgAEAAEAAAADAP//AgAEAAEAAAAAAAUAAgAEAAEAAAAAAAYAAgAEAAEAAAD//wcAAgAEAAEAAAD8//v/AgACAAEAAAD7//3/AgADAAEAAAD7//7/AgADAAEAAAA=")
 tile_set = SubResource("TileSet_ssnwc")
+script = ExtResource("4_w6f35")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-32, -64)
