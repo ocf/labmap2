@@ -1,8 +1,8 @@
 extends TileMapLayer
 
 const Device = preload("res://device_class.gd")
-
 const NamesDictionary = "res://name_dictionary.json"
+
 var device_coordinates = {}
 
 var devices = populate_desktops()
@@ -81,6 +81,7 @@ func convert_keys_to_vector2i(dictionary: Dictionary) -> Dictionary:
 	
 static func string_to_vector2(string := "") -> Vector2:
 	# Called by convert_keys_to_vector2i()
+	# I (kinn) totally copy+pasted this fn from the internet
 	if string:
 		var new_string: String = string
 		new_string = new_string.erase(0, 1)

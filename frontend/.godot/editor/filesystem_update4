@@ -1,4 +1,2 @@
 res://floor_map.tscn
 res://scripts/devices.gd
-res://name_dictionary.json
-res://device_class.gd
