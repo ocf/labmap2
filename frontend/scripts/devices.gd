@@ -2,16 +2,25 @@ extends TileMapLayer
 
 const Device = preload("res://device_class.gd")
 const NamesDictionary = "res://name_dictionary.json"
+const SampleData = "res://sample_data.json"
 
 var device_coordinates = {}
+var sample_data = {}
 
-var devices = populate_desktops()
+var devices = populate_blank_desktops()
 
 func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
+	sample_data = load_json_file(SampleData)
 	assign_names_to_desktops(devices)
+	populate_devices(sample_data)
+	
 	for device in devices:
-		print(get_device_info(device))
+		if device.user != "No User":
+			print(get_device_info(device))
+		
+func _process(delta):
+	pass
 
 func assign_names_to_desktops(devices: Array):
 	# Called by ready()
@@ -24,12 +33,12 @@ func assign_names_to_desktops(devices: Array):
 func get_status_from_atlas(atlas_coords: Vector2i) -> String:
 	# Called by populate_desktops(), get_all_tile_coordinates()
 	if atlas_coords in [Vector2i(2,1), Vector2i(4,1)]:
-		return "On"
+		return "online"
 	elif atlas_coords in [Vector2i(1,1), Vector2i(3,1)]:
-		return "Off"
-	return "Unknown"
+		return "offline"
+	return "unknown"
 	
-func populate_desktops() -> Array:
+func populate_blank_desktops() -> Array:
 	# Called by ready()
 	var desktops = []
 	var tile_coords = get_used_cells()
@@ -37,10 +46,32 @@ func populate_desktops() -> Array:
 	for coord in tile_coords:
 		var atlas_coords = get_cell_atlas_coords(Vector2i(coord))
 		var status = get_status_from_atlas(atlas_coords)
-		var desktop = Device.new("Default", coord, atlas_coords, status, "Guest")
+		var desktop = Device.new("Default", coord, atlas_coords, status, "No logged_in status", "No User")
 		desktops.append(desktop)
 		
 	return desktops
+
+func populate_devices(data: Dictionary):
+	# Get the 'desktops' array from the JSON
+	var desktops_array = data.get("desktops", [])
+
+	for desktop_data in desktops_array:
+		var json_name = desktop_data.get("name", "")
+		var matched_device = find_device_by_name(json_name)
+		
+		# If a matching device is found, update its properties
+		if matched_device != null:
+			matched_device.status = desktop_data.get("status", "")
+			matched_device.logged_in = desktop_data.get("logged_in", "")
+			matched_device.user = desktop_data.get("user", "")
+		else:
+			print("No matching device found for name: ", json_name)
+
+func find_device_by_name(name: String) -> Device:
+	for device in devices:
+		if device.name == name:
+			return device
+	return null
 
 func get_all_tile_coordinates():
 	# Called by populate_desktops()
@@ -48,15 +79,19 @@ func get_all_tile_coordinates():
 	
 	for coord in tile_coordinates:
 		if get_cell_atlas_coords(Vector2i(coord)) in [Vector2i(4, 1), Vector2i(2, 1)]:
-			print("Tile at: ", coord, ", Status: On")
+			print("Tile at: ", coord, ", Status: online")
 		else:
-			print("Tile at: ", coord, ", Status: Off")
+			print("Tile at: ", coord, ", Status: offline")
 		
 	return tile_coordinates
 
 func get_device_info(device: Device):
 	# Called by ready()
 	return [device.name, device.status, device.user, device.coordinates, device.atlas_coordinates]
+
+#
+# -- FILE PARSING AND DATA CONVERSION BELOW
+#
 
 func load_json_file(filePath: String):
 	# Called by ready()

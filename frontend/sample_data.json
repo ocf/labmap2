@@ -1,0 +1,16 @@
+{
+	"desktops": [
+		{
+			"name": "Blight",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Drought",
+			"status": "offline",
+			"logged_in": "unknown",
+			"user": "none"
+		}
+	]
+}
