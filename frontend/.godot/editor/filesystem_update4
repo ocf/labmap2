@@ -1,0 +1,4 @@
+res://floor_map.tscn
+res://scripts/devices.gd
+res://sample_data.json
+res://floor_map.gd

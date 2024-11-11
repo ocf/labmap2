@@ -8,7 +8,13 @@
 		},
 		{
 			"name": "Drought",
-			"status": "offline",
+			"status": "online",
+			"logged_in": "unknown",
+			"user": "none"
+		},
+		{
+			"name": "Pumpkin",
+			"status": "online",
 			"logged_in": "unknown",
 			"user": "none"
 		}

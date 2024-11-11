@@ -10,10 +10,10 @@ var logged_in: String
 var user: String
 
 # Constructor for the TileDesktop object
-func _init(name: String, coordinates: Vector2i, atlas_coordinates: Vector2i, status: String, logged_in: String, user: String):
-	self.name = name
-	self.coordinates = coordinates
-	self.atlas_coordinates = atlas_coordinates
-	self.status = status
-	self.logged_in = logged_in
-	self.user = user
+func _init(name_var: String, coordinates_var: Vector2i, atlas_coordinates_var: Vector2i, status_var: String, logged_in_var: String, user_var: String):
+	self.name = name_var
+	self.coordinates = coordinates_var
+	self.atlas_coordinates = atlas_coordinates_var
+	self.status = status_var
+	self.logged_in = logged_in_var
+	self.user = user_var

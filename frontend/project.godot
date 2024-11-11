@@ -15,6 +15,10 @@ run/main_scene="res://floor_map.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Devices="*res://scripts/devices.gd"
+
 [display]
 
 window/size/viewport_width=1280
