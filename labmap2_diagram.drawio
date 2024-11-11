@@ -1,86 +1,70 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="682" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1080" background="none" math="0" shadow="0">
+    <mxGraphModel dx="827" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1080" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-74" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-74" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="145" width="690" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-70" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-70" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="210" width="330" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-41" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="10" y="540" as="sourcePoint" />
-            <mxPoint x="1970" y="540" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-42" value="Labmap2 Diagram" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-42" value="Labmap2 Diagram" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry x="940" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-43" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Frontend&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-43" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Frontend&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry y="540" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Backend&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Backend&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry y="500" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-58" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-58" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="150" width="280" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-59" value="&amp;nbsp; Node Exporter&lt;div&gt;&lt;ul&gt;&lt;li&gt;cronjob runs logged_in_users_exporter.sh to collect logged in users&lt;/li&gt;&lt;li&gt;This script formats output into .prom&lt;/li&gt;&lt;li&gt;output placed in /textfile-collector&lt;/li&gt;&lt;li&gt;Node exporter packages output with 9100/metrics&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-59" value="&amp;nbsp; Node Exporter&lt;div&gt;&lt;ul&gt;&lt;li&gt;cronjob/systemd timer runs logged_in_users_exporter.sh to collect logged in users&lt;/li&gt;&lt;li&gt;This script formats output into .prom&lt;/li&gt;&lt;li&gt;output placed in /textfile-collector&lt;/li&gt;&lt;li&gt;Node exporter packages output with 9100/metrics&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="50" y="240" width="240" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-61" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Desktop (NixOS, Debian)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-61" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Desktop (NixOS, Debian)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="160" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-62" value="&amp;nbsp; logged_in_users_exporter.sh&lt;div&gt;&lt;ul&gt;&lt;li&gt;runs &quot;who&quot; with filters to extract unique logged in users.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-62" value="&amp;nbsp; logged_in_users_exporter.sh&lt;div&gt;&lt;ul&gt;&lt;li&gt;runs &quot;loginctl&quot; with filters to extract active logged in users.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="50" y="390" width="240" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-63" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;/var/lib/&lt;/span&gt;&lt;span style=&quot;font-weight: normal; font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;node_exporter/textfile_collector&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-63" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;/var/lib/&lt;/span&gt;&lt;span style=&quot;font-weight: normal; font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;node_exporter/textfile_collector&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="190" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-64" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;/etc/prometheus_scripts/logged_in_users.sh&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-64" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;/etc/prometheus_scripts/logged_in_users.sh&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="210" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-65" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-65" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="390" y="270" width="270" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-66" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Prometheus Server&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-66" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Prometheus Server&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="395" y="270" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-67" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;prometheus.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-67" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;prometheus.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="395" y="300" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-69" value="&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Prometheus is a data aggregator.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prometheus generates a target list from&lt;br&gt;the LDAP server to get the addresses of&lt;br&gt;the nodes&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;All listed nodes have their 9100/metrics&lt;br&gt;scraped and aggregated for later&lt;br&gt;processing (such as on Grafana)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-69" value="&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Prometheus is a data aggregator.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prometheus generates a target list from&lt;br&gt;the LDAP server to get the addresses of&lt;br&gt;the nodes&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;All listed nodes have their 9100/metrics&lt;br&gt;scraped and aggregated for later&lt;br&gt;processing (such as on Grafana)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="395" y="330" width="260" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-72" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Dementors (VM)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-72" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Dementors (VM)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="374" y="210" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-73" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;dementors.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-73" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;dementors.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="374" y="240" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-75" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Riptide&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-75" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Riptide&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="360" y="150" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-76" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;riptide.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-76" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;riptide.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="360" y="180" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-77" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-59" target="_R0oTAtTKJcegxaHf9_w-65">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="520" y="490" as="sourcePoint" />
-            <mxPoint x="570" y="440" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="330" y="310" />
-              <mxPoint x="330" y="365" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-59" target="_R0oTAtTKJcegxaHf9_w-59">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-59" target="_R0oTAtTKJcegxaHf9_w-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-82" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-59" target="_R0oTAtTKJcegxaHf9_w-62">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-82" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-59" target="_R0oTAtTKJcegxaHf9_w-62" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="150" y="390" as="sourcePoint" />
             <mxPoint x="200" y="340" as="targetPoint" />
@@ -90,53 +74,57 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-83" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="145" width="350" height="340" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-83" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="145" width="350" height="345" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-84" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 1&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-84" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Tornado&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1110" y="150" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-85" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-85" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;tornado.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1110" y="180" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-88" value="&lt;div style=&quot;font-size: 24px; font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&amp;nbsp; Data Generator (data_generator.py)&lt;/span&gt;&lt;/div&gt;&lt;ul style=&quot;font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Queries Prometheus for relevant information&lt;br&gt;such as &#39;up&#39; and &#39;node_logged_in_users&#39;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Generates JSON with results for the frontend&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-88" value="&lt;div style=&quot;font-size: 24px; font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&amp;nbsp; Data Generator (data_generator.py)&lt;/span&gt;&lt;/div&gt;&lt;ul style=&quot;font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Queries Prometheus for relevant information&lt;br&gt;such as &#39;up&#39; and &#39;node_logged_in_users&#39;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Generates JSON with results for the frontend&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1110" y="212.5" width="278.57" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-89" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;desktop_status:JSON&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;{&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;desktops&quot;: [&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: &quot;fred&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;status&quot;: &quot;online&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;logged_in&quot;: &quot;yes&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;user&quot;: &quot;kinn&quot;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}, ...&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1110" y="305" width="300" height="170" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-89" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;desktop_status:JSON&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;{&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;desktops&quot;: [&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;name&quot;: &quot;fred&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;status&quot;: &quot;online&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;logged_in&quot;: &quot;yes&quot;,&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&quot;user&quot;: &quot;kinn&quot;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}, ...&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="305" width="300" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-91" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-88" target="_R0oTAtTKJcegxaHf9_w-89">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-91" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.967;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-88" target="_R0oTAtTKJcegxaHf9_w-89" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1130" y="365" as="sourcePoint" />
             <mxPoint x="1180" y="315" as="targetPoint" />
             <Array as="points">
               <mxPoint x="1430" y="250" />
-              <mxPoint x="1430" y="390" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-94" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-31" value="Produces" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_R0oTAtTKJcegxaHf9_w-91">
+          <mxGeometry x="-0.1518" y="1" relative="1" as="geometry">
+            <mxPoint x="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-94" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="730" y="210" width="300" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-95" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-95" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="760" y="270" width="260" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-96" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;LDAP Server&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-96" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;LDAP Server&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="765" y="270" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-97" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;ldap.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-97" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;ldap.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="765" y="300" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-98" value="&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Contains a list of all desktops and their&lt;br&gt;addresses&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-98" value="&lt;ul style=&quot;font-size: 12px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Contains a list of all desktops and their&lt;br&gt;addresses&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="765" y="330" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-99" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Firestorm (VM)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-99" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Firestorm (VM)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="744" y="210" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-100" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;firestorm.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-100" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;firestorm.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="744" y="240" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-101" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.001;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="_R0oTAtTKJcegxaHf9_w-95">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-101" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.001;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="_R0oTAtTKJcegxaHf9_w-95" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="740" y="400" as="sourcePoint" />
             <mxPoint x="790" y="350" as="targetPoint" />
@@ -146,68 +134,47 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-102" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="_R0oTAtTKJcegxaHf9_w-88">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="740" y="400" as="sourcePoint" />
-            <mxPoint x="790" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1070" y="413" />
-              <mxPoint x="1070" y="250" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-103" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="145" width="450" height="515" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-103" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1490" y="145" width="450" height="335" as="geometry" />
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-104" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 2&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-104" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 2&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1500" y="150" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-105" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-105" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1500" y="180" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-106" value="&amp;nbsp; Art Repo Storage&lt;div&gt;&lt;ul&gt;&lt;li&gt;Contains sprite art to be used by the frontend&lt;/li&gt;&lt;li&gt;To get sprites, the frontend will query a username and will get a&lt;br&gt;response with sprites corresponding to that username.&lt;/li&gt;&lt;li&gt;A user can upload their sprites which will represent their &quot;waddles&quot;&lt;br&gt;on the Labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-106" value="&amp;nbsp; Art Repo Storage&lt;div&gt;&lt;ul&gt;&lt;li&gt;Contains sprite art to be used by the frontend&lt;/li&gt;&lt;li&gt;To get sprites, the frontend will query a username and will get a&lt;br&gt;response with sprites corresponding to that username.&lt;/li&gt;&lt;li&gt;A user can upload their sprites which will represent their &quot;waddles&quot;&lt;br&gt;on the Labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1500" y="210" width="410" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-125" value="&amp;nbsp; Art Repo API&lt;div&gt;&lt;ul&gt;&lt;li&gt;An API will allow for users to view their sprites, upload their sprites with their ocf account, and allow for the frontend to grab the sprites and use them on the labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-125" value="&amp;nbsp; Art Repo API&lt;div&gt;&lt;ul&gt;&lt;li&gt;An API will allow for users to view their sprites, upload their sprites with their ocf account, and allow for the frontend to grab the sprites and use them on the labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1500" y="340" width="410" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-127" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Written by Kinn (Oct. 2024)&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-127" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Written by Kinn (Nov. 2024)&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry x="940" y="30" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-128" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="610" width="690" height="330" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-128" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="610" width="1200" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-129" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 3&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
-          <mxGeometry x="565" y="620" width="260" height="40" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-129" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Tornado&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="60" y="620" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-130" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
-          <mxGeometry x="565" y="650" width="260" height="20" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-130" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;tornado.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="60" y="650" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-132" value="&amp;nbsp; Labmap2&lt;div&gt;&lt;ul&gt;&lt;li&gt;This is the program which displays the Labmap on the large monitor in the OCF&lt;/li&gt;&lt;li&gt;The program runs on a number of dependencies to display accurate information, such as:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Obtaining JSON&#39;s containing information about the status of the computers from Server 1&lt;/li&gt;&lt;li&gt;Obtaining Waddles sprites corresponding to logged in users from Server 2&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="570" y="680" width="650" height="230" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-132" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="60" y="680" width="1160" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-133" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1390" y="600" width="430" height="172.5" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-136" value="&amp;nbsp; Art Repo Frontend&lt;div&gt;&lt;ul&gt;&lt;li&gt;Frontend which lets people upload Waddles sprites corresponding to their user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1500" y="560" width="410" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-134" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 4&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1398.57" y="612.5" width="260" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-135" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1398.57" y="642.5" width="260" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-136" value="&amp;nbsp; Art Repo Frontend&lt;div&gt;&lt;ul&gt;&lt;li&gt;Frontend which lets people upload Waddles sprites corresponding to their user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1398.57" y="672.5" width="410" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-137" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-136" target="_R0oTAtTKJcegxaHf9_w-125">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-137" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-136" target="_R0oTAtTKJcegxaHf9_w-125" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1230" y="470" as="sourcePoint" />
             <mxPoint x="1280" y="420" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1705" y="560" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-138" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-125" target="_R0oTAtTKJcegxaHf9_w-106">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-138" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-125" target="_R0oTAtTKJcegxaHf9_w-106" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1610" y="430" as="sourcePoint" />
             <mxPoint x="1660" y="380" as="targetPoint" />
@@ -217,24 +184,162 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-139" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-106" target="_R0oTAtTKJcegxaHf9_w-132">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-41" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1350" y="795" as="sourcePoint" />
-            <mxPoint x="1320" y="710" as="targetPoint" />
+            <mxPoint x="10" y="540" as="sourcePoint" />
+            <mxPoint x="1970" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-4" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Uses &quot;ocflabmap2&quot; creds&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;to authenticate&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="485" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="E45NMd3pD-3T9T8s_Ec4-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="470" as="sourcePoint" />
+            <mxPoint x="910" y="420" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1470" y="270" />
-              <mxPoint x="1470" y="560" />
-              <mxPoint x="1320" y="560" />
-              <mxPoint x="1320" y="795" />
+              <mxPoint x="780" y="413" />
+              <mxPoint x="780" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-140" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.523;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-89" target="_R0oTAtTKJcegxaHf9_w-132">
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-25" value="Authenticates&lt;div&gt;with&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E45NMd3pD-3T9T8s_Ec4-7">
+          <mxGeometry x="-0.0634" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-4" target="_R0oTAtTKJcegxaHf9_w-88">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1000" y="590" as="sourcePoint" />
-            <mxPoint x="1050" y="540" as="targetPoint" />
+            <mxPoint x="860" y="470" as="sourcePoint" />
+            <mxPoint x="910" y="420" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1267" y="738" />
+              <mxPoint x="1070" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-26" value="Sends&lt;div&gt;data to&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E45NMd3pD-3T9T8s_Ec4-8">
+          <mxGeometry x="-0.398" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-9" value="Labmap2" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="680" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="720" width="1010" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;devices.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Initialize blank device array&lt;/li&gt;&lt;li&gt;Assigns device array corresponding coordinates as per the labmap layout&lt;/li&gt;&lt;li&gt;Populates the devices with accurate information corresponding to the real state of the computer lab, as determined by the data_generator.py&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="750" width="380" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;names_dictionary.json&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;Hard-coded coordinates and names&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="940" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;sample_data.json&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sample&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;output from data_&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;generator.py&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="940" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="820" as="sourcePoint" />
+            <mxPoint x="510" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="920" />
+              <mxPoint x="150" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="820" as="sourcePoint" />
+            <mxPoint x="510" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="920" />
+              <mxPoint x="320" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Determines which devices have users by combing through the now populated Devices array&lt;/li&gt;&lt;li&gt;Checks Devices array for new users&lt;/li&gt;&lt;li&gt;When a new user appears, spawns a Waddles who walks in and sits down at the computer, and then walks out when the user is no longer active.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;When new user is found, asks art repo if user has custom sprites to use&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="470" y="750" width="380" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Labmap2 Art Directory&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sprite art used to illustrate the layout and devices of the lab&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="750" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-19" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.tscn&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="713" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="870" as="sourcePoint" />
+            <mxPoint x="560" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="365" y="730" />
+              <mxPoint x="975" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="E45NMd3pD-3T9T8s_Ec4-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="800" as="sourcePoint" />
+            <mxPoint x="900" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="870" y="795" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.048;entryY=1.007;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="_R0oTAtTKJcegxaHf9_w-88">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="760" as="sourcePoint" />
+            <mxPoint x="840" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="570" />
+              <mxPoint x="1120" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-28" value="Runs query and produces .json result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E45NMd3pD-3T9T8s_Ec4-27">
+          <mxGeometry x="0.0834" y="-2" relative="1" as="geometry">
+            <mxPoint y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="_R0oTAtTKJcegxaHf9_w-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="380" as="sourcePoint" />
+            <mxPoint x="520" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="365" />
+              <mxPoint x="330" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-30" value="Scrapes&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E45NMd3pD-3T9T8s_Ec4-29">
+          <mxGeometry x="0.1561" relative="1" as="geometry">
+            <mxPoint y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="E45NMd3pD-3T9T8s_Ec4-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="565" y="930" as="sourcePoint" />
+            <mxPoint x="490" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="565" y="980" />
+              <mxPoint x="430" y="980" />
+              <mxPoint x="430" y="930" />
+              <mxPoint x="365" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-34" value="Checks user list&lt;div&gt;contained in&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E45NMd3pD-3T9T8s_Ec4-32">
+          <mxGeometry x="0.0094" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="_R0oTAtTKJcegxaHf9_w-106">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1220" y="750" as="sourcePoint" />
+            <mxPoint x="1270" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="630" />
+              <mxPoint x="1470" y="630" />
+              <mxPoint x="1470" y="270" />
             </Array>
           </mxGeometry>
         </mxCell>

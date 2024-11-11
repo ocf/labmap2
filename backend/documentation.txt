@@ -3,9 +3,12 @@ data_generator.py
 This script queries the Prometheus server which hosts all the relevant data regarding desktop 'up'
 status as well as logged in users.
 It produces a JSON file containing the mentioned information so that it can be queried by the frontend
-and processed into a visual form for display
+and processed into a visual form for display.
+In order to grab the data from Prometheus, the script uses a utility user named "ocflabmap2" which
+is used to authenticate with Prometheus's basic auth. The login data is stored on an .env file
+located on Tornado.
 
-logged_in_users.sh
+logged_in_users_exporter.sh
 
 This shell script sits on every system so that the list of logged in users can be grabbed and then
 packaged with the rest of the device's metrics when queried by Prometheus.
@@ -13,6 +16,9 @@ To keep this information up to date, the script is ran periodically by a cronjob
 systemd timer (NixOS).
 The output is a '.prom' file which is information specially formatted for PromQL queries. It is placed
 in a /textfile-collector folder which is checked everytime node exporter refreshes with new information.
+The script filters through the output of 'loginctl' to determine which users are logged in as well as
+which users are active, as some users can remain logged in while the computer is locked (namely, ocfstaff
+and ocfroot which are not logged out on timeout, when regular users are. See ocf/wayout).
 
 node_exporter_modification.nix
 
