@@ -1,22 +1,53 @@
 {
 	"desktops": [
 		{
-			"name": "Blight",
+			"name": "Pumpkin",
 			"status": "online",
 			"logged_in": "yes",
 			"user": "kinn"
 		},
 		{
-			"name": "Drought",
+			"name": "Callie",
 			"status": "online",
-			"logged_in": "unknown",
+			"logged_in": "yes",
 			"user": "none"
 		},
 		{
-			"name": "Pumpkin",
+			"name": "Tabitha",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "none"
+		},
+		{
+			"name": "Venom",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "none"
+		},
+		{
+			"name": "Patches",
+			"status": "offline",
+			"logged_in": "yes",
+			"user": "none"
+		},
+		{
+			"name": "Blight",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "none"
+		},
+		{
+			"name": "Marshmellow",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "none"
+		},
+		{
+			"name": "Windows",
 			"status": "online",
 			"logged_in": "unknown",
 			"user": "none"
 		}
+
 	]
 }

@@ -7,12 +7,12 @@ var device_coordinates = {}
 var sample_data = {}
 
 @onready var devices = populate_blank_desktops()
+@onready var update_timer = Timer.new()
 
 func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
 	assign_names_to_desktops(devices)
-	sample_data = load_json_file(SampleData)
-	populate_devices(sample_data)
+	populate_devices(load_json_file(SampleData))
 	update_desktop_displays()
 
 func _process(_delta):
@@ -134,3 +134,8 @@ static func string_to_vector2(string := "") -> Vector2:
 		return Vector2(int(array[0]), int(array[1]))
 
 	return Vector2.ZERO
+
+
+func _on_update_timer_timeout() -> void:
+	populate_devices(load_json_file(SampleData))
+	update_desktop_displays()

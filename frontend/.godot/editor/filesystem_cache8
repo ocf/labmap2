@@ -1,16 +1,48 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731285065
+::res://::1731393689
+devices.gd::GDScript::-1::1731389859::0::1::::<>TileMapLayer<>::
 device_class.gd::GDScript::-1::1731274773::0::1::::Device<>Object<>::
-floor_map.tscn::PackedScene::7631678058768377369::1731285065::0::1::::<><>::uid://cqt0vr61f2bxi::::res://art/floor_sheet.png<>uid://nernh4erw8au::::res://art/table_sheet.png<>uid://c7hy84ujceanw::::res://art/wall_sheet.png<>res://scripts/devices.gd
+floor_map.gd::GDScript::-1::1731393628::0::1::::<>Node2D<>::
+floor_map.tscn::PackedScene::7631678058768377369::1731393649::0::1::::<><>::res://floor_map.gd<>uid://cqt0vr61f2bxi::::res://art/floor_sheet.png<>uid://nernh4erw8au::::res://art/table_sheet.png<>uid://c7hy84ujceanw::::res://art/wall_sheet.png<>res://devices.gd<>uid://fmhx8rf4knol::::res://paths/to_Plague.tres
 icon.svg::CompressedTexture2D::8019015828006172325::1729573371::1731273376::1::::<><>::
-name_dictionary.json::JSON::-1::1729900217::0::1::::<><>::
-new_script.gd::GDScript::-1::1729899563::0::1::::<>Node<>::
-sample_data.json::JSON::-1::1731285007::0::1::::<><>::
-::res://art/::1731285064
+name_dictionary.json::JSON::-1::1731391654::0::1::::<><>::
+sample_data.json::JSON::-1::1731391267::0::1::::<><>::
+waddles.gd::GDScript::-1::1731388194::0::1::::<>Node2D<>::
+waddles.tscn::PackedScene::1364462654114510386::1731393649::0::1::::<><>::uid://7gr5qh15e2r2::::res://art/waddles-stand-front.png<>uid://b058h4jq37mpd::::res://art/waddles-stand-back.png<>res://waddles.gd<>res://waddles_sprite.gd
+waddles_sprite.gd::GDScript::-1::1731388239::0::1::::<>AnimatedSprite2D<>::
+::res://art/::1731319385
 floor_sheet.png::CompressedTexture2D::5936642411387975618::1729899563::1731273376::1::::<><>::
-table_sheet.png::CompressedTexture2D::921768295176594968::1731285087::1731285090::1::::<><>::
+table_sheet.png::CompressedTexture2D::921768295176594968::1731291206::1731319385::1::::<><>::
 waddles-stand-back.png::CompressedTexture2D::4205090806430381745::1730258448::1731274150::1::::<><>::
 waddles-stand-front.png::CompressedTexture2D::2259515878044405065::1730258464::1731274150::1::::<><>::
 wall_sheet.png::CompressedTexture2D::7034852701591905200::1731273466::1731273477::1::::<><>::
-::res://scripts/::1731284257
-devices.gd::GDScript::-1::1731284257::0::1::::<>TileMapLayer<>::
+::res://paths/::1731391561
+to_Bandit.tres::Curve2D::3964835214106076797::1731387816::0::1::::<><>::
+to_Blight.tres::Curve2D::1039018513729703157::1731384861::0::1::::<><>::
+to_Bolt.tres::Curve2D::8860442562283751062::1731391349::0::1::::<><>::
+to_Callie.tres::Curve2D::4045538636889622418::1731377793::0::1::::<><>::
+to_Computer Between Drought and Venom.tres::Curve2D::7718546782449186872::1731384772::0::1::::<><>::
+to_Drought.tres::Curve2D::4381478742715598169::1731384729::0::1::::<><>::
+to_Fred.tres::Curve2D::93006143977462846::1731377799::0::1::::<><>::
+to_Gabriel.tres::Curve2D::3352327448385657489::1731391523::0::1::::<><>::
+to_Lexy.tres::Curve2D::4715392189424450289::1731377806::0::1::::<><>::
+to_Marshmellow.tres::Curve2D::9206221315052632289::1731388194::0::1::::<><>::
+to_Misty.tres::Curve2D::4533587762587288008::1731391537::0::1::::<><>::
+to_Patches.tres::Curve2D::5183291648129576954::1731384879::0::1::::<><>::
+to_Pepper.tres::Curve2D::3669894903190170233::1731391142::0::1::::<><>::
+to_Pickles.tres::Curve2D::3523611281609719317::1731391088::0::1::::<><>::
+to_Plague.tres::Curve2D::376184603246626331::1731391561::0::1::::<><>::
+to_Pumpkin.tres::Curve2D::4300882724580055123::1731377813::0::1::::<><>::
+to_Scanner 1.tres::Curve2D::3312245600863601515::1731391435::0::1::::<><>::
+to_Scanner 2.tres::Curve2D::1867299367943324528::1731391462::0::1::::<><>::
+to_Scanner 3.tres::Curve2D::4552607048370097516::1731391477::0::1::::<><>::
+to_Shadow.tres::Curve2D::7202429245993580378::1731391397::0::1::::<><>::
+to_Smokey.tres::Curve2D::8603290125073973280::1731391362::0::1::::<><>::
+to_Socks.tres::Curve2D::212375828273240441::1731391549::0::1::::<><>::
+to_Spots.tres::Curve2D::9138898070918892080::1731391377::0::1::::<><>::
+to_Spud.tres::Curve2D::5178034277345821971::1731391120::0::1::::<><>::
+to_Sunny.tres::Curve2D::2507108117954204135::1731391158::0::1::::<><>::
+to_Tabitha.tres::Curve2D::5027847431649842825::1731383395::0::1::::<><>::
+to_Three Monitors.tres::Curve2D::7318154713762704475::1731377829::0::1::::<><>::
+to_Venom.tres::Curve2D::6901781104435125920::1731385069::0::1::::<><>::
+to_Windows.tres::Curve2D::396053016331995211::1731391211::0::1::::<><>::
