@@ -1,5 +1,4 @@
 res://floor_map.tscn
-res://floor_map.gd
-res://waddles.tscn
 res://waddles.gd
-res://sample_data.json
+res://waddles.tscn
+res://waddles_sprite.gd

@@ -22,9 +22,9 @@ func _process(delta: float):
 	
 	update_animation_direction()
 	
-	if is_returning and progress_ratio <= 0.0:
-		modulate.a -= delta
-		if modulate.a == 0:
+	if is_returning and progress_ratio <= 0.05:
+		waddles_sprite.modulate.a -= delta
+		if waddles_sprite.modulate.a == 0:
 			queue_free()
 
 func set_target_desktop(desktop_name: String):
