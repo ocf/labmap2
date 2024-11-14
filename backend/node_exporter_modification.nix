@@ -184,7 +184,7 @@
          echo "node_logged_in_user{name=\"$user\", state=\"$locked_status\"} 1" > $OUTPUT_FILE
          fi
        done
-    ''
+       '';
     };
   };
 }
