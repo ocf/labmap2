@@ -1,45 +1,45 @@
 {
 	"desktops": [
 		{
-			"name": "Pumpkin",
+			"name": "pumpkin",
 			"status": "online",
 			"logged_in": "yes",
 			"user": "kinn"
 		},
 		{
-			"name": "Callie",
+			"name": "callie",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "none"
+			"user": "laksith"
 		},
 		{
-			"name": "Tabitha",
+			"name": "tabitha",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "none"
+			"user": "storce"
 		},
 		{
 			"name": "Venom",
-			"status": "online",
-			"logged_in": "yes",
+			"status": "offline",
+			"logged_in": "no",
 			"user": "none"
 		},
 		{
-			"name": "Patches",
-			"status": "offline",
+			"name": "patches",
+			"status": "online",
 			"logged_in": "yes",
-			"user": "none"
+			"user": "jaysa"
 		},
 		{
 			"name": "Blight",
 			"status": "online",
-			"logged_in": "yes",
+			"logged_in": "no",
 			"user": "none"
 		},
 		{
-			"name": "Marshmellow",
+			"name": "marshmellow",
 			"status": "online",
-			"logged_in": "yes",
+			"logged_in": "no",
 			"user": "none"
 		},
 		{
@@ -47,7 +47,12 @@
 			"status": "online",
 			"logged_in": "no",
 			"user": "none"
+		},
+		{
+			"name": "Richard",
+			"status": "online",
+			"logged_in": "no",
+			"user": "none"
 		}
-
 	]
 }

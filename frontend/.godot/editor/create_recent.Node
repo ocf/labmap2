@@ -1,7 +1,10 @@
+Panel
+VBoxContainer
+Control
+Node
 Timer
 Path2D
 Node2D
 Sprite2D
 PathFollow2D
 AnimatedSprite2D
-Node

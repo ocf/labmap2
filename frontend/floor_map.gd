@@ -15,10 +15,12 @@ func spawn_waddles_if_logged_in():
 			add_child(waddles_instance)
 			waddles_instance.set_target_desktop(device.name)
 			waddles_active_devices[device.name] = waddles_instance
+			Logger.log("User '%s' logged in" % device.user, "waddles", device.name)
 			
 		elif device.logged_in != "yes" and device.name in waddles_active_devices.keys():
 			waddles_active_devices[device.name].walk_back_to_door()
 			waddles_active_devices.erase(device.name)
+			Logger.log("User '%s' logged out" % device.user, "waddles", device.name)
 
 func _on_update_timer_timeout() -> void:
 	spawn_waddles_if_logged_in()

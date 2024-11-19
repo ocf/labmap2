@@ -13,6 +13,7 @@ func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
 	assign_names_to_desktops(devices)
 	populate_devices(load_json_file(SampleData))
+	Logger.log("Devices array populated", "status_change", "ALL_DEVICES")
 	update_desktop_displays()
 
 func _process(_delta):
@@ -29,6 +30,7 @@ func populate_blank_desktops() -> Array:
 		var desktop = Device.new("Default", coord, atlas_coords, "No Status Assigned", "No logged_in status", "No User")
 		desktops.append(desktop)
 		
+	Logger.log("Devices array initalized", "status_change", "ALL_DEVICES")
 	return desktops
 	
 func assign_names_to_desktops(devices_var: Array):
@@ -38,6 +40,7 @@ func assign_names_to_desktops(devices_var: Array):
 		if coord in device_coordinates.keys():
 			# Assign the name from the dictionary
 			device.name = device_coordinates[coord]
+	Logger.log("Devices array names assigned", "status_change", "ALL_DEVICES")
 
 func populate_devices(data: Dictionary):
 	# Called by ready()
@@ -64,12 +67,16 @@ func update_desktop_displays():
 		match [device.status, current_atlas_coords]:
 			["online", Vector2i(1, 1)]:
 				new_atlas_coords = Vector2i(2, 1)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
 			["online", Vector2i(3, 1)]:
 				new_atlas_coords = Vector2i(4, 1)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
 			["offline", Vector2i(2, 1)]:
 				new_atlas_coords = Vector2i(1, 1) 
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			["offline", Vector2i(4, 1)]:
 				new_atlas_coords = Vector2i(3, 1)
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			_:
 				new_atlas_coords = current_atlas_coords
 				
@@ -97,6 +104,7 @@ func get_device_info(device: Device):
 
 func get_devices():
 	return devices
+	
 #
 # -- FILE PARSING AND DATA CONVERSION BELOW
 #
