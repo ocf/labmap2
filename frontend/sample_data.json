@@ -33,20 +33,20 @@
 		{
 			"name": "Blight",
 			"status": "online",
-			"logged_in": "no",
-			"user": "none"
+			"logged_in": "yes",
+			"user": "windy"
 		},
 		{
 			"name": "marshmellow",
 			"status": "online",
-			"logged_in": "no",
-			"user": "none"
+			"logged_in": "yes",
+			"user": "oliver"
 		},
 		{
 			"name": "Windows",
 			"status": "online",
 			"logged_in": "no",
-			"user": "none"
+			"user": "jingwen"
 		},
 		{
 			"name": "Richard",

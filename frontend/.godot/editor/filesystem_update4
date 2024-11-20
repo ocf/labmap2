@@ -1,8 +1,4 @@
 res://floor_map.tscn
-res://logger.gd
-res://devices.gd
-res://floor_map.gd
-res://waddles.tscn
-res://logging_box.tscn
-res://log_display.tscn
 res://log_display.gd
+res://waddles.tscn
+res://log_display.tscn

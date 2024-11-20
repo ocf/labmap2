@@ -3,12 +3,13 @@
 [ext_resource type="Script" path="res://log_display.gd" id="1_etlxd"]
 
 [node name="LogDisplay" type="Control"]
-top_level = true
-z_index = 2
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_etlxd")
 
 [node name="LogContainer" type="VBoxContainer" parent="."]
@@ -16,13 +17,6 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -40.0
-offset_right = 40.0
 grow_vertical = 0
-
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [connection signal="fade_complete" from="." to="." method="_on_fade_complete"]

@@ -1,6 +1,10 @@
+PanelContainer
 Panel
-VBoxContainer
+HBoxContainer
 Control
+Container
+Label
+VBoxContainer
 Node
 Timer
 Path2D
