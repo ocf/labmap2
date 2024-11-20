@@ -1,3 +1,12 @@
+'''
+This script pertains to the behavior of the Waddles sprites as they appear on screen.
+It gives the Waddles path files (.tres) to follow to their devices, as well as
+taking those same paths back to the door when they leave. It also as functions
+ensuring the Waddles are facing the correct direction when they walk by checking
+the difference between their current position and the position they were in in the
+moment prior.
+'''
+
 extends Node2D
 
 @onready var path_2d = $Path2D
@@ -28,24 +37,26 @@ func _process(delta: float):
 			queue_free()
 
 func set_target_desktop(desktop_name: String):
+	# Called by spawn_waddles_if_logged_in() in floor_map.gd
 	target_destination = desktop_name
-	# Load the path resource based on the desktop name
 	var path_resource = load("res://paths/to_%s.tres" % desktop_name)
 	if path_resource:
-		path_2d.curve = path_resource  # Set the path on the local Path2D node
+		path_2d.curve = path_resource
 	# Reset the PathFollow2D position and start movement
 	path_follow.h_offset = -580
 	path_follow.v_offset = 10
-	path_follow.progress_ratio = 0  # Starts at the beginning of the path
+	path_follow.progress_ratio = 0
 	path_length = path_2d.curve.get_baked_length()
 	speed = 1.0 / (travel_duration * (path_length / 400))
 
 func walk_back_to_door():
+	# Called by spawn_waddles_if_logged_in() in floor_map.gd
 	is_returning = true
 	path_follow.progress_ratio = 1.0
 	speed = -abs(speed)
 
 func update_animation_direction():
+	# Called by process()
 	var current_position = path_follow.position
 	var dx = current_position.x - last_position.x
 	var dy = current_position.y - last_position.y

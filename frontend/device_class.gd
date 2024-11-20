@@ -1,3 +1,8 @@
+'''
+This script is a singleton and provides the custom Devices object as it is
+used in the devices.gd and floor_map.gd scripts.
+'''
+
 extends Object
 
 class_name Device

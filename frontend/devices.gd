@@ -1,3 +1,14 @@
+'''
+This script assigns data and identification to the devices on the Devices tilemaplayer.
+It does this by querying information from data_generator.py (or sample_data.json)
+and assigning it via the names_dictionary.json, which contains a list of the device
+coordinates as they appear on the tilemaplayer and their corresponding names.
+After this, it assigns additional information such as the device's on/off status,
+the device's logged-in status, and the user which is logged in.
+Finally, based on the Update_Timer node in the floor_map scene, it re-queries this
+information so that all the devices and their information remains up-to-date.
+'''
+
 extends TileMapLayer
 
 const NamesDictionary = "res://name_dictionary.json"
@@ -43,7 +54,7 @@ func assign_names_to_desktops(devices_var: Array):
 	Logger.log("Devices array names assigned", "status_change", "ALL_DEVICES")
 
 func populate_devices(data: Dictionary):
-	# Called by ready()
+	# Called by ready() and _on_update_timer_timeout()
 	# Get the 'desktops' array from the JSON
 	var desktops_array = data.get("desktops", [])
 
@@ -60,7 +71,7 @@ func populate_devices(data: Dictionary):
 			pass
 
 func update_desktop_displays():
-	# Called by ready()
+	# Called by ready() and _on_update_timer_timeout()
 	for device in devices:
 		var current_atlas_coords = device.atlas_coordinates
 		var new_atlas_coords: Vector2i
@@ -99,18 +110,23 @@ func find_device_by_name(name_var: String) -> Device:
 	return null
 
 func get_device_info(device: Device):
-	# Called by ready()
+	# Unused
 	return [device.name, device.status, device.user, device.coordinates, device.atlas_coordinates]
 
 func get_devices():
+	# Unused
 	return devices
 	
+func _on_update_timer_timeout() -> void:
+	populate_devices(load_json_file(SampleData))
+	update_desktop_displays()
+
 #
 # -- FILE PARSING AND DATA CONVERSION BELOW
 #
 
 func load_json_file(filePath: String):
-	# Called by ready()
+	# Called by ready() and _on_update_timer_timeout()
 	if FileAccess.file_exists(filePath):
 		var dataFile = FileAccess.open(filePath, FileAccess.READ)
 		var parsedResult = JSON.parse_string(dataFile.get_as_text())
@@ -142,8 +158,3 @@ static func string_to_vector2(string := "") -> Vector2:
 		return Vector2(int(array[0]), int(array[1]))
 
 	return Vector2.ZERO
-
-
-func _on_update_timer_timeout() -> void:
-	populate_devices(load_json_file(SampleData))
-	update_desktop_displays()
