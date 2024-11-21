@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=15 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Script" path="res://floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Curve2D" uid="uid://fmhx8rf4knol" path="res://paths/to_Plague.tres" id="6_6pbk3"]
 [ext_resource type="Script" path="res://logger.gd" id="7_5mbbv"]
 [ext_resource type="PackedScene" uid="uid://brs2mnfeqqby3" path="res://log_display.tscn" id="8_y67md"]
+[ext_resource type="Script" path="res://http_request_node.gd" id="9_wcwvr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
 resource_name = "Floor Tiles"
@@ -169,6 +170,9 @@ tile_map_data = PackedByteArray("AAD+//3/AgABAAEAAAD///z/AgABAAEAAAD///v/AgABAAE
 tile_set = SubResource("TileSet_ssnwc")
 script = ExtResource("4_w6f35")
 metadata/_edit_lock_ = true
+
+[node name="HTTPRequestNode" type="HTTPRequest" parent="Devices"]
+script = ExtResource("9_wcwvr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-32, -64)

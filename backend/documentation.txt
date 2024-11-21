@@ -1,12 +1,17 @@
-data_generator.py
+data_generator_server/
+This directory contains the source files for the data_generator_server. It runs on Rust using the
+framework actix_web and simply spits out the response for the data_generator.py script.
+The .env file containing the authentication information to access the Prometheus server also
+sits in this directory.
+
+data_generator_server/data_generator.py
 
 This script queries the Prometheus server which hosts all the relevant data regarding desktop 'up'
 status as well as logged in users.
 It produces a JSON file containing the mentioned information so that it can be queried by the frontend
 and processed into a visual form for display.
 In order to grab the data from Prometheus, the script uses a utility user named "ocflabmap2" which
-is used to authenticate with Prometheus's basic auth. The login data is stored on an .env file
-located on Tornado.
+is used to authenticate with Prometheus's basic auth.
 
 logged_in_users_exporter.sh
 
