@@ -1,14 +1,17 @@
-[gd_scene load_steps=15 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=18 format=4 uid="uid://dgy3vf0xjb874"]
 
-[ext_resource type="Script" path="res://floor_map.gd" id="1_423c3"]
+[ext_resource type="Script" path="res://scripts/floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
 [ext_resource type="Texture2D" uid="uid://nernh4erw8au" path="res://art/table_sheet.png" id="2_7vs56"]
 [ext_resource type="Texture2D" uid="uid://c7hy84ujceanw" path="res://art/wall_sheet.png" id="3_85vmw"]
-[ext_resource type="Script" path="res://devices.gd" id="4_w6f35"]
-[ext_resource type="Curve2D" uid="uid://fmhx8rf4knol" path="res://paths/to_Plague.tres" id="6_6pbk3"]
-[ext_resource type="Script" path="res://logger.gd" id="7_5mbbv"]
-[ext_resource type="PackedScene" uid="uid://brs2mnfeqqby3" path="res://log_display.tscn" id="8_y67md"]
-[ext_resource type="Script" path="res://http_request_node.gd" id="9_wcwvr"]
+[ext_resource type="Script" path="res://scripts/devices.gd" id="4_w6f35"]
+[ext_resource type="Script" path="res://scripts/logger.gd" id="7_5mbbv"]
+[ext_resource type="Curve2D" uid="uid://bwquiy0ulu1hx" path="res://paths/to_bandit.tres" id="7_ghka2"]
+[ext_resource type="PackedScene" uid="uid://brs2mnfeqqby3" path="res://scenes/log_display.tscn" id="8_y67md"]
+[ext_resource type="Script" path="res://scripts/http_request_node.gd" id="9_wcwvr"]
+[ext_resource type="Texture2D" uid="uid://dtlrn0pyxevuv" path="res://art/background.png" id="10_graqh"]
+[ext_resource type="Script" path="res://scripts/background_light.gd" id="11_aijb1"]
+[ext_resource type="Texture2D" uid="uid://cuaj5txrl38kg" path="res://art/background2.png" id="11_e0kwo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
 resource_name = "Floor Tiles"
@@ -174,13 +177,13 @@ metadata/_edit_lock_ = true
 [node name="HTTPRequestNode" type="HTTPRequest" parent="Devices"]
 script = ExtResource("9_wcwvr")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Viewport" type="Camera2D" parent="."]
 position = Vector2(-32, -64)
 metadata/_edit_lock_ = true
 
 [node name="Debug_Path_Node" type="Path2D" parent="."]
 z_index = 1
-curve = ExtResource("6_6pbk3")
+curve = ExtResource("7_ghka2")
 
 [node name="Update_Timer" type="Timer" parent="."]
 autostart = true
@@ -194,6 +197,17 @@ offset_left = -670.0
 offset_top = 244.0
 offset_right = -484.0
 offset_bottom = 294.0
+
+[node name="BackgroundLight" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(-31, -63)
+texture = ExtResource("10_graqh")
+script = ExtResource("11_aijb1")
+
+[node name="BackgroundDark" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(-31, -63)
+texture = ExtResource("11_e0kwo")
 
 [connection signal="result_ready" from="Devices/HTTPRequestNode" to="Devices" method="_on_http_request_node_result_ready"]
 [connection signal="timeout" from="Update_Timer" to="." method="_on_update_timer_timeout"]

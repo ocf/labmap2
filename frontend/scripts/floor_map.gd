@@ -21,7 +21,7 @@ func spawn_waddles_if_logged_in():
 	devices_array = get_node("Devices").devices
 	for device in devices_array:
 		if device.logged_in == "yes" and device.name not in waddles_active_devices.keys():
-			var waddles_instance = preload("res://waddles.tscn").instantiate()
+			var waddles_instance = preload("res://scenes/waddles.tscn").instantiate()
 			add_child(waddles_instance)
 			waddles_instance.set_target_desktop(device.name)
 			waddles_active_devices[device.name] = waddles_instance

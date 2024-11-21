@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://brs2mnfeqqby3"]
 
-[ext_resource type="Script" path="res://log_display.gd" id="1_etlxd"]
+[ext_resource type="Script" path="res://scripts/log_display.gd" id="1_etlxd"]
 
 [node name="LogDisplay" type="Control"]
 layout_mode = 3

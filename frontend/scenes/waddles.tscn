@@ -1,18 +1,18 @@
 [gd_scene load_steps=6 format=3 uid="uid://to7raweca6xi"]
 
-[ext_resource type="Texture2D" uid="uid://7gr5qh15e2r2" path="res://art/waddles-stand-front.png" id="1_hfi4v"]
-[ext_resource type="Texture2D" uid="uid://b058h4jq37mpd" path="res://art/waddles-stand-back.png" id="2_1bgtk"]
-[ext_resource type="Script" path="res://waddles.gd" id="3_3d403"]
-[ext_resource type="Script" path="res://waddles_sprite.gd" id="4_glbrg"]
+[ext_resource type="Script" path="res://scripts/waddles.gd" id="1_cps8b"]
+[ext_resource type="Texture2D" uid="uid://7gr5qh15e2r2" path="res://art/waddles-stand-front.png" id="2_yvs5d"]
+[ext_resource type="Texture2D" uid="uid://b058h4jq37mpd" path="res://art/waddles-stand-back.png" id="3_ru7ij"]
+[ext_resource type="Script" path="res://scripts/waddles_sprite.gd" id="4_pfnef"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o5jgv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_hfi4v")
+"texture": ExtResource("2_yvs5d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_1bgtk")
+"texture": ExtResource("3_ru7ij")
 }],
 "loop": false,
 "name": &"default",
@@ -23,7 +23,7 @@ animations = [{
 show_behind_parent = true
 z_index = 1
 y_sort_enabled = true
-script = ExtResource("3_3d403")
+script = ExtResource("1_cps8b")
 
 [node name="Path2D" type="Path2D" parent="."]
 y_sort_enabled = true
@@ -40,4 +40,4 @@ y_sort_enabled = true
 position = Vector2(517.19, 255.567)
 rotation = 0.514451
 sprite_frames = SubResource("SpriteFrames_o5jgv")
-script = ExtResource("4_glbrg")
+script = ExtResource("4_pfnef")

@@ -42,6 +42,9 @@ func set_target_desktop(desktop_name: String):
 	var path_resource = load("res://paths/to_%s.tres" % desktop_name)
 	if path_resource:
 		path_2d.curve = path_resource
+	else:
+		Logger.log("No path to device %s" % desktop_name, "Warning", desktop_name)
+		return
 	# Reset the PathFollow2D position and start movement
 	path_follow.h_offset = -580
 	path_follow.v_offset = 10

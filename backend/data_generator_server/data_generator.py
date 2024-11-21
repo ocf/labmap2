@@ -21,7 +21,8 @@ prometheus_url = "https://prometheus.ocf.berkeley.edu:443/api/v1/query"
 
 # Prometheus queries
 up_query = 'up{host_type="desktop"}'
-login_query = 'node_logged_in_user{host_type="desktop", state="unlocked"}'
+#login_query = 'node_logged_in_user{host_type="desktop", state="unlocked"}'
+login_query = 'node_logged_in_user{host_type="desktop"}'
 
 def query_prometheus(query):
     """ Query Prometheus and return the result """

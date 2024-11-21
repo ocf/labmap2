@@ -1,6 +1,11 @@
 res://floor_map.tscn
-res://http_request_node.gd
+res://background_light.gd
 res://waddles.tscn
 res://log_display.tscn
-res://devices.gd
-res://floor_map.gd
+res://scenes/floor_map.tscn
+res://scripts/devices.gd
+res://scenes/waddles.tscn
+res://scenes/log_display.tscn
+res://scripts/floor_map.gd
+res://scripts/waddles.gd
+res://paths/to_bandit.tres
