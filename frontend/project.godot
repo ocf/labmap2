@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Devices="res://devices.gd"
 Logger="*res://logger.gd"
+HttpRequestNode="*res://http_request_node.gd"
 
 [display]
 

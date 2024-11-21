@@ -195,7 +195,9 @@ offset_top = 244.0
 offset_right = -484.0
 offset_bottom = 294.0
 
+[connection signal="result_ready" from="Devices/HTTPRequestNode" to="Devices" method="_on_http_request_node_result_ready"]
 [connection signal="timeout" from="Update_Timer" to="." method="_on_update_timer_timeout"]
 [connection signal="timeout" from="Update_Timer" to="Devices" method="_on_update_timer_timeout"]
+[connection signal="timeout" from="Update_Timer" to="Devices/HTTPRequestNode" method="_on_update_timer_timeout"]
 [connection signal="timeout" from="Update_Timer" to="LogDisplay" method="_on_update_timer_timeout"]
 [connection signal="new_log" from="Logger" to="LogDisplay" method="_on_logger_new_log"]

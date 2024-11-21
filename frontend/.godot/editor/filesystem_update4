@@ -1,6 +1,6 @@
 res://floor_map.tscn
+res://http_request_node.gd
 res://waddles.tscn
 res://log_display.tscn
-res://http_request_node.gd
-res://floor_map.gd
 res://devices.gd
+res://floor_map.gd

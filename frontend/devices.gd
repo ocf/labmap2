@@ -16,6 +16,7 @@ const SampleData = "res://sample_data.json"
 
 var device_coordinates = {}
 var sample_data = {}
+var data = {}
 
 @onready var devices = populate_blank_desktops()
 @onready var update_timer = Timer.new()
@@ -23,7 +24,8 @@ var sample_data = {}
 func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
 	assign_names_to_desktops(devices)
-	populate_devices(load_json_file(SampleData))
+	#populate_devices(load_json_file(SampleData))
+	populate_devices(data)
 	Logger.log("Devices array populated", "status_change", "ALL_DEVICES")
 	update_desktop_displays()
 
@@ -53,10 +55,10 @@ func assign_names_to_desktops(devices_var: Array):
 			device.name = device_coordinates[coord]
 	Logger.log("Devices array names assigned", "status_change", "ALL_DEVICES")
 
-func populate_devices(data: Dictionary):
+func populate_devices(data_var: Dictionary):
 	# Called by ready() and _on_update_timer_timeout()
 	# Get the 'desktops' array from the JSON
-	var desktops_array = data.get("desktops", [])
+	var desktops_array = data_var.get("desktops", [])
 
 	for desktop_data in desktops_array:
 		var json_name = desktop_data.get("name", "")
@@ -118,8 +120,12 @@ func get_devices():
 	return devices
 	
 func _on_update_timer_timeout() -> void:
-	populate_devices(load_json_file(SampleData))
+	#populate_devices(load_json_file(SampleData))
+	populate_devices(data)
 	update_desktop_displays()
+	
+func _on_http_request_node_result_ready() -> void:
+	data = $HTTPRequestNode.prometheus_result
 
 #
 # -- FILE PARSING AND DATA CONVERSION BELOW

@@ -29,8 +29,8 @@ func spawn_waddles_if_logged_in():
 			
 		elif device.logged_in != "yes" and device.name in waddles_active_devices.keys():
 			waddles_active_devices[device.name].walk_back_to_door()
+			Logger.log("User '%s' logged out" % device.user, "waddles", device.name)
 			waddles_active_devices.erase(device.name)
-			Logger.log("User logged out", "waddles", device.name)
 
 func _on_update_timer_timeout() -> void:
 	spawn_waddles_if_logged_in()
