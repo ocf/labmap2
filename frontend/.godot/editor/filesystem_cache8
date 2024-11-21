@@ -1,7 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732217450
+::res://::1732219287
 icon.svg::CompressedTexture2D::8019015828006172325::1729218193::1732209578::1::::<><>::
-logger.gd::GDScript::-1::1732162144::0::1::::<>Node<>::
 name_dictionary.json::JSON::-1::1731717358::0::1::::<><>::
 sample_data.json::JSON::-1::1732126771::0::1::::<><>::
 ::res://art/::1732211186
@@ -12,10 +11,11 @@ table_sheet.png::CompressedTexture2D::921768295176594968::1731433279::1732209578
 waddles-stand-back.png::CompressedTexture2D::4205090806430381745::1731433279::1732209578::1::::<><>::
 waddles-stand-front.png::CompressedTexture2D::2259515878044405065::1731433279::1732209578::1::::<><>::
 wall_sheet.png::CompressedTexture2D::7034852701591905200::1731433279::1732209578::1::::<><>::
-::res://paths/::1731717493
-to_bandit.tres::Curve2D::3964835214106076797::1731433279::0::1::::<><>::
+::res://paths/::1732218177
+to_bandit.tres::Curve2D::3964835214106076797::1732218177::0::1::::<><>::
 to_Blight.tres::Curve2D::1039018513729703157::1731433279::0::1::::<><>::
 to_bolt.tres::Curve2D::8860442562283751062::1731433279::0::1::::<><>::
+to_breezy.tres::Curve2D::5044101861065296420::1732218010::0::1::::<><>::
 to_callie.tres::Curve2D::4045538636889622418::1731433279::0::1::::<><>::
 to_Computer Between Drought and Venom.tres::Curve2D::7718546782449186872::1731433279::0::1::::<><>::
 to_Drought.tres::Curve2D::4381478742715598169::1731433279::0::1::::<><>::
@@ -39,19 +39,19 @@ to_spots.tres::Curve2D::9138898070918892080::1731433279::0::1::::<><>::
 to_spud.tres::Curve2D::5178034277345821971::1731433279::0::1::::<><>::
 to_sunny.tres::Curve2D::2507108117954204135::1731433279::0::1::::<><>::
 to_tabitha.tres::Curve2D::5027847431649842825::1731433279::0::1::::<><>::
-to_Three Monitors.tres::Curve2D::7318154713762704475::1731433279::0::1::::<><>::
 to_Venom.tres::Curve2D::6901781104435125920::1731433279::0::1::::<><>::
 to_Windows.tres::Curve2D::396053016331995211::1731433279::0::1::::<><>::
-::res://scenes/::1732217450
-floor_map.tscn::PackedScene::7631678058768377369::1732217467::0::1::::<><>::res://scripts/floor_map.gd<>uid://cqt0vr61f2bxi::::res://art/floor_sheet.png<>uid://nernh4erw8au::::res://art/table_sheet.png<>uid://c7hy84ujceanw::::res://art/wall_sheet.png<>res://scripts/devices.gd<>uid://fmhx8rf4knol::::res://paths/to_Plague.tres<>res://logger.gd<>uid://brs2mnfeqqby3::::res://scenes/log_display.tscn<>res://scripts/http_request_node.gd<>uid://dtlrn0pyxevuv::::res://art/background.png<>res://scripts/background_light.gd<>uid://cuaj5txrl38kg::::res://art/background2.png
-log_display.tscn::PackedScene::3618451304175608720::1732217425::0::1::::<><>::res://scripts/log_display.gd
-waddles.tscn::PackedScene::1364462654114510386::1732217425::0::1::::<><>::uid://7gr5qh15e2r2::::res://art/waddles-stand-front.png<>uid://b058h4jq37mpd::::res://art/waddles-stand-back.png<>res://scripts/waddles.gd<>res://scripts/waddles_sprite.gd
-::res://scripts/::1732217421
+::res://scenes/::1732218179
+floor_map.tscn::PackedScene::7631678058768377369::1732218179::0::1::::<><>::res://scripts/floor_map.gd<>uid://cqt0vr61f2bxi::::res://art/floor_sheet.png<>uid://nernh4erw8au::::res://art/table_sheet.png<>uid://c7hy84ujceanw::::res://art/wall_sheet.png<>res://scripts/devices.gd<>res://scripts/logger.gd<>uid://bwquiy0ulu1hx::::res://paths/to_bandit.tres<>uid://brs2mnfeqqby3::::res://scenes/log_display.tscn<>res://scripts/http_request_node.gd<>uid://dtlrn0pyxevuv::::res://art/background.png<>res://scripts/background_light.gd<>uid://cuaj5txrl38kg::::res://art/background2.png
+log_display.tscn::PackedScene::3618451304175608720::1732218179::0::1::::<><>::res://scripts/log_display.gd
+waddles.tscn::PackedScene::1364462654114510386::1732218179::0::1::::<><>::res://scripts/waddles.gd<>uid://7gr5qh15e2r2::::res://art/waddles-stand-front.png<>uid://b058h4jq37mpd::::res://art/waddles-stand-back.png<>res://scripts/waddles_sprite.gd
+::res://scripts/::1732217899
 background_light.gd::GDScript::-1::1732217421::0::1::::<>Sprite2D<>::
-devices.gd::GDScript::-1::1732209481::0::1::::<>TileMapLayer<>::
+devices.gd::GDScript::-1::1732217632::0::1::::<>TileMapLayer<>::
 device_class.gd::GDScript::-1::1732162144::0::1::::Device<>Object<>::
-floor_map.gd::GDScript::-1::1732209481::0::1::::<>Node2D<>::
+floor_map.gd::GDScript::-1::1732217660::0::1::::<>Node2D<>::
 http_request_node.gd::GDScript::-1::1732209481::0::1::::<>HTTPRequest<>::
+logger.gd::GDScript::-1::1732162144::0::1::::<>Node<>::
 log_display.gd::GDScript::-1::1732162144::0::1::::<>Control<>::
-waddles.gd::GDScript::-1::1732162144::0::1::::<>Node2D<>::
+waddles.gd::GDScript::-1::1732217899::0::1::::<>Node2D<>::
 waddles_sprite.gd::GDScript::-1::1732162144::0::1::::<>AnimatedSprite2D<>::

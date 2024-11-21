@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1782" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1980" pageHeight="1080" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2963" dy="1737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1600" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="360" y="210" width="330" height="260" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-42" value="Labmap2 Diagram" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="940" y="10" width="100" height="40" as="geometry" />
+          <mxGeometry x="1260" y="10" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-43" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Frontend&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
           <mxGeometry y="540" width="100" height="40" as="geometry" />
@@ -75,12 +75,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-83" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1100" y="145" width="350" height="345" as="geometry" />
+          <mxGeometry x="1100" y="145" width="820" height="345" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-84" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Tornado&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-84" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Docker/Kubernetes&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1110" y="150" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-85" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;tornado.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-85" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="1110" y="180" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-88" value="&lt;div style=&quot;font-size: 24px; font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&amp;nbsp; Data Generator (data_generator.py)&lt;/span&gt;&lt;/div&gt;&lt;ul style=&quot;font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Queries Prometheus for relevant information&lt;br&gt;such as &#39;up&#39; and &#39;node_logged_in_users&#39;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Generates JSON with results for the frontend&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -135,59 +135,56 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-103" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1490" y="145" width="450" height="515" as="geometry" />
+          <mxGeometry x="2030" y="150" width="450" height="515" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-104" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Server 2&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1500" y="150" width="260" height="40" as="geometry" />
+          <mxGeometry x="2040" y="155" width="260" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-105" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;????.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1500" y="180" width="260" height="20" as="geometry" />
+          <mxGeometry x="2040" y="185" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-106" value="&amp;nbsp; Art Repo Storage&lt;div&gt;&lt;ul&gt;&lt;li&gt;Contains sprite art to be used by the frontend&lt;/li&gt;&lt;li&gt;To get sprites, the frontend will query a username and will get a&lt;br&gt;response with sprites corresponding to that username.&lt;/li&gt;&lt;li&gt;A user can upload their sprites which will represent their &quot;waddles&quot;&lt;br&gt;on the Labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1500" y="210" width="410" height="120" as="geometry" />
+          <mxGeometry x="2040" y="215" width="410" height="120" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-125" value="&amp;nbsp; Art Repo API&lt;div&gt;&lt;ul&gt;&lt;li&gt;An API will allow for users to view their sprites, upload their sprites with their ocf account, and allow for the frontend to grab the sprites and use them on the labmap.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1500" y="340" width="410" height="90" as="geometry" />
+          <mxGeometry x="2040" y="345" width="410" height="90" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-127" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Written by Kinn (Nov. 2024)&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="940" y="30" width="100" height="40" as="geometry" />
+          <mxGeometry x="1260" y="30" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-128" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="610" width="1400" height="830" as="geometry" />
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-128" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="610" width="1490" height="910" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-129" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Tornado&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-129" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Riptide&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="620" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-130" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;tornado.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-130" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;riptide.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="650" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="_R0oTAtTKJcegxaHf9_w-132" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="40" y="680" width="1380" height="750" as="geometry" />
-        </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-136" value="&amp;nbsp; Art Repo Frontend&lt;div&gt;&lt;ul&gt;&lt;li&gt;Frontend which lets people upload Waddles sprites corresponding to their user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1500" y="560" width="410" height="80" as="geometry" />
+          <mxGeometry x="2040" y="565" width="410" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-137" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-136" target="_R0oTAtTKJcegxaHf9_w-125" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1230" y="470" as="sourcePoint" />
-            <mxPoint x="1280" y="420" as="targetPoint" />
+            <mxPoint x="1770" y="475" as="sourcePoint" />
+            <mxPoint x="1820" y="425" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-138" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-125" target="_R0oTAtTKJcegxaHf9_w-106" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1610" y="430" as="sourcePoint" />
-            <mxPoint x="1660" y="380" as="targetPoint" />
+            <mxPoint x="2150" y="435" as="sourcePoint" />
+            <mxPoint x="2200" y="385" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1930" y="385" />
-              <mxPoint x="1930" y="260" />
+              <mxPoint x="2470" y="390" />
+              <mxPoint x="2470" y="265" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="_R0oTAtTKJcegxaHf9_w-41" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="10" y="540" as="sourcePoint" />
-            <mxPoint x="1970" y="540" as="targetPoint" />
+            <mxPoint x="9" y="540" as="sourcePoint" />
+            <mxPoint x="2490" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="E45NMd3pD-3T9T8s_Ec4-4" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Uses &quot;ocflabmap2&quot; creds&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;to authenticate&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -222,65 +219,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-9" value="Labmap2" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="50" y="680" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="720" width="680" height="690" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;devices.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Initialize blank device array&lt;/li&gt;&lt;li&gt;Assigns device array corresponding coordinates as per the labmap layout&lt;/li&gt;&lt;li&gt;Populates the devices with accurate information corresponding to the real state of the computer lab, as determined by the data_generator.py&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="60" y="750" width="290" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;names_dictionary.json&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;Hard-coded coordinates and names&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1245" y="920" width="140" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;sample_data.json&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sample&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;output from data_&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;generator.py&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="920" width="140" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.gd (Root script)&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Determines which devices have users by combing through the now populated Devices array&lt;/li&gt;&lt;li&gt;Checks Devices array for new users&lt;/li&gt;&lt;li&gt;When a new user appears, spawns a Waddles who walks in and sits down at the computer, and then walks out when the user is no longer active.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;When new user is found, asks art repo if user has custom sprites to use&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="370" y="750" width="350" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Labmap2 Art Directory&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sprite art used to illustrate the layout and devices of the lab&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1240" y="760" width="170" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-19" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.tscn&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
-          <mxGeometry x="60" y="713" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-16" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="870" as="sourcePoint" />
-            <mxPoint x="540" y="820" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="278" y="690" />
-              <mxPoint x="1370" y="690" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="E45NMd3pD-3T9T8s_Ec4-16" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="632.5000000000002" y="750.0000000000002" as="sourcePoint" />
-            <mxPoint x="1272.4999999999995" y="720" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="545" y="700" />
-              <mxPoint x="1283" y="700" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.048;entryY=1.007;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="_R0oTAtTKJcegxaHf9_w-88" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="790" y="760" as="sourcePoint" />
-            <mxPoint x="840" y="710" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="205" y="570" />
-              <mxPoint x="1120" y="570" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-28" value="Runs query and produces .json result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E45NMd3pD-3T9T8s_Ec4-27" vertex="1" connectable="0">
-          <mxGeometry x="0.0834" y="-2" relative="1" as="geometry">
-            <mxPoint y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="E45NMd3pD-3T9T8s_Ec4-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="_R0oTAtTKJcegxaHf9_w-65" target="_R0oTAtTKJcegxaHf9_w-59" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="470" y="380" as="sourcePoint" />
@@ -296,13 +234,72 @@
             <mxPoint y="5" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-3" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="690" width="1440" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-1" value="&lt;div style=&quot;font-size: 24px; font-weight: 700; text-align: left; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;&amp;nbsp; Data Generator Server (data_generator_server/src/main.rs)&lt;/span&gt;&lt;/div&gt;&lt;ul style=&quot;text-align: left; text-wrap: nowrap;&quot;&gt;&lt;li style=&quot;&quot;&gt;Rust Actix-Web server which acts as an end point which can be&lt;br&gt;accesible over the web.&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Runs data_generator.py everytime /generator is accessed.&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Returns 401 if .env file is missing on the instance.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1502" y="199" width="380" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hhp667tVKxhIkd8h5iBH-1" target="_R0oTAtTKJcegxaHf9_w-88">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="490" as="sourcePoint" />
+            <mxPoint x="1370" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_R0oTAtTKJcegxaHf9_w-132" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="760" width="1400" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-9" value="Labmap2" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="80" y="760" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="77" y="820" width="680" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;devices.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Initialize blank device array&lt;/li&gt;&lt;li&gt;Assigns device array corresponding coordinates as per the labmap layout&lt;/li&gt;&lt;li&gt;Populates the devices with accurate information corresponding to the real state of the computer lab, as determined by the data_generator.py&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="87" y="850" width="290" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;names_dictionary.json&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;Hard-coded coordinates and names&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1272" y="1020" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;sample_data.json&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sample&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;output from data_&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;generator.py&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1107" y="1020" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.gd (Root script)&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Determines which devices have users by combing through the now populated Devices array&lt;/li&gt;&lt;li&gt;Checks Devices array for new users&lt;/li&gt;&lt;li&gt;When a new user appears, spawns a Waddles who walks in and sits down at the computer, and then walks out when the user is no longer active.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;When new user is found, asks art repo if user has custom sprites to use&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="397" y="850" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Labmap2 Art Directory&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains sprite art used to illustrate the layout and devices of the lab&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1267" y="860" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-19" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;floor_map.tscn&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="87" y="813" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="517" y="970.0000000000001" as="sourcePoint" />
+            <mxPoint x="567" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="305" y="790" />
+              <mxPoint x="1397" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="E45NMd3pD-3T9T8s_Ec4-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="659.5000000000002" y="850.0000000000002" as="sourcePoint" />
+            <mxPoint x="1299.4999999999995" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="572" y="800" />
+              <mxPoint x="1310" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="E45NMd3pD-3T9T8s_Ec4-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="E45NMd3pD-3T9T8s_Ec4-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="545" y="930" as="sourcePoint" />
-            <mxPoint x="470" y="870" as="targetPoint" />
+            <mxPoint x="572" y="1030" as="sourcePoint" />
+            <mxPoint x="497" y="970.0000000000001" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="458" y="980" />
-              <mxPoint x="278" y="980" />
+              <mxPoint x="485" y="1080" />
+              <mxPoint x="305" y="1080" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -311,58 +308,47 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E45NMd3pD-3T9T8s_Ec4-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="_R0oTAtTKJcegxaHf9_w-106" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1220" y="750" as="sourcePoint" />
-            <mxPoint x="1270" y="700" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="460" y="590" />
-              <mxPoint x="1470" y="590" />
-              <mxPoint x="1470" y="270" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;device_class.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Contains template for a Device&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="63" y="930" width="137" height="100" as="geometry" />
+          <mxGeometry x="90" y="1030" width="137" height="100" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="P5SRgfHSEkwE8TJXIZPF-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="350" y="910" as="sourcePoint" />
-            <mxPoint x="400" y="860" as="targetPoint" />
+            <mxPoint x="377" y="1010" as="sourcePoint" />
+            <mxPoint x="427" y="960.0000000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="740" y="720" width="330" height="250" as="geometry" />
+          <mxGeometry x="767" y="820" width="330" height="250" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;waddles.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Controls where the Waddles sprite goes&lt;/li&gt;&lt;li&gt;Animation control depending on direction&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="750" y="760" width="310" height="100" as="geometry" />
+          <mxGeometry x="777" y="860" width="310" height="100" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="P5SRgfHSEkwE8TJXIZPF-5" target="P5SRgfHSEkwE8TJXIZPF-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;waddles_sprite.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Makes the Waddles fade in when instantiated&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="750" y="880" width="310" height="70" as="geometry" />
+          <mxGeometry x="777" y="980.0000000000001" width="310" height="70" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Paths Directory&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains .tres files which dictate the path the Waddles follow when spawned&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1075" y="760" width="150" height="90" as="geometry" />
+          <mxGeometry x="1102" y="860" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="P5SRgfHSEkwE8TJXIZPF-5" target="P5SRgfHSEkwE8TJXIZPF-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="810" y="900" as="sourcePoint" />
-            <mxPoint x="860" y="850" as="targetPoint" />
+            <mxPoint x="837" y="1000" as="sourcePoint" />
+            <mxPoint x="887" y="950" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="983" y="710" />
-              <mxPoint x="1150" y="710" />
+              <mxPoint x="1010" y="810" />
+              <mxPoint x="1177" y="810" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="P5SRgfHSEkwE8TJXIZPF-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="710" y="940" as="sourcePoint" />
-            <mxPoint x="760" y="890" as="targetPoint" />
+            <mxPoint x="737" y="1040" as="sourcePoint" />
+            <mxPoint x="787" y="990.0000000000001" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="633" y="710" />
-              <mxPoint x="905" y="710" />
+              <mxPoint x="660" y="810" />
+              <mxPoint x="932" y="810" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -373,17 +359,17 @@
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="P5SRgfHSEkwE8TJXIZPF-5" target="P5SRgfHSEkwE8TJXIZPF-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="790" y="920" as="sourcePoint" />
-            <mxPoint x="840" y="870" as="targetPoint" />
+            <mxPoint x="817" y="1020" as="sourcePoint" />
+            <mxPoint x="867" y="970.0000000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="E45NMd3pD-3T9T8s_Ec4-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="960" as="sourcePoint" />
-            <mxPoint x="500" y="910" as="targetPoint" />
+            <mxPoint x="477" y="1060" as="sourcePoint" />
+            <mxPoint x="527" y="1010" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="205" y="1030" />
-              <mxPoint x="1150" y="1030" />
+              <mxPoint x="232" y="1130" />
+              <mxPoint x="1177" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -394,18 +380,103 @@
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="E45NMd3pD-3T9T8s_Ec4-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1150" y="1030" as="sourcePoint" />
-            <mxPoint x="1050" y="910" as="targetPoint" />
+            <mxPoint x="1177" y="1130" as="sourcePoint" />
+            <mxPoint x="1077" y="1010" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1315" y="1030" />
+              <mxPoint x="1342" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="P5SRgfHSEkwE8TJXIZPF-23" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;waddles.tscn&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
-          <mxGeometry x="750" y="720" width="100" height="40" as="geometry" />
+          <mxGeometry x="777" y="820" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IzmB0CEJHRy8K8YiyzS8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-17" target="E45NMd3pD-3T9T8s_Ec4-17">
+        <mxCell id="IzmB0CEJHRy8K8YiyzS8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-17" target="E45NMd3pD-3T9T8s_Ec4-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-4" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;Death (VM)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="701" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-5" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;death.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="730" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-6" value="&lt;span style=&quot;font-size: 13px; font-weight: 400;&quot;&gt;labmap2.ocf.berkeley.edu&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="77" y="790" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="E45NMd3pD-3T9T8s_Ec4-15" target="_R0oTAtTKJcegxaHf9_w-106" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1220" y="750" as="sourcePoint" />
+            <mxPoint x="1270" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="485" y="590" />
+              <mxPoint x="1980" y="590" />
+              <mxPoint x="1980" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Hhp667tVKxhIkd8h5iBH-8" target="Hhp667tVKxhIkd8h5iBH-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="760" as="sourcePoint" />
+            <mxPoint x="840" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1450" y="1180" />
+              <mxPoint x="1450" y="570" />
+              <mxPoint x="1600" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E45NMd3pD-3T9T8s_Ec4-28" value="Runs query and produces .json result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="E45NMd3pD-3T9T8s_Ec4-27" vertex="1" connectable="0">
+          <mxGeometry x="0.0834" y="-2" relative="1" as="geometry">
+            <mxPoint x="-892" y="52" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;background_light.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Change the alpha of the light background based on the time of day.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1308.75" width="290" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;HTTPRequestNode.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;On ready, queries the data_generator_server and recieves data if successful.&lt;/li&gt;&lt;li&gt;Formats data into JSON then Dictionary before returning data to&lt;/li&gt;&lt;li&gt;parent node.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1139.5" width="290" height="150.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.624;exitY=1.006;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="E45NMd3pD-3T9T8s_Ec4-10" target="Hhp667tVKxhIkd8h5iBH-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="1160" as="sourcePoint" />
+            <mxPoint x="910" y="1110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="268" y="1100" />
+              <mxPoint x="308" y="1100" />
+              <mxPoint x="308" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-10" value="has child" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Hhp667tVKxhIkd8h5iBH-9">
+          <mxGeometry x="0.1383" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="785" y="1199" width="338" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-15" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;log_display.tscn&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1199" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;log_display.gd&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Grab logs from logger and display them&lt;br&gt;in an HBoxContainer.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Show the most recent 5 logs and make&lt;br&gt;them fade after a set amount of time.&lt;/li&gt;&lt;li&gt;Color-code the messages based on&lt;br&gt;category.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1239" width="310" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-18" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="418.5" y="1230" width="307" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Logger.gd&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;&quot;&gt;Connects to all scripts&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Contains functions which do the following:&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Has a template for log entries including&lt;br&gt;timestamp, category, message, and&lt;br&gt;associated device.&lt;/li&gt;&lt;li&gt;Call &quot;log()&quot; to add entry to log.&lt;/li&gt;&lt;li&gt;get_logs() returns all logs.&lt;/li&gt;&lt;li&gt;Stores logs in memory.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="427" y="1238" width="290" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Hhp667tVKxhIkd8h5iBH-16" target="Hhp667tVKxhIkd8h5iBH-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="883" y="1176" as="sourcePoint" />
+            <mxPoint x="933" y="1126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-20" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1222.5" width="307" height="107.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Hhp667tVKxhIkd8h5iBH-19" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Timer Node&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Connects to all scripts&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Responsible for refreshing the data every second&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1148.5" y="1230" width="290" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
