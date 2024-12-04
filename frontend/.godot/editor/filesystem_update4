@@ -1,25 +1,3 @@
-res://paths/to_Venom.tres
 res://scenes/floor_map.tscn
 res://scenes/waddles.tscn
 res://scenes/log_display.tscn
-res://paths/to_Drought.tres
-res://paths/to_Computer Between Drought and Venom.tres
-res://paths/to_Blight.tres
-res://paths/to_patches.tres
-res://paths/to_marshmellow.tres
-res://paths/to_pickles.tres
-res://paths/to_spud.tres
-res://paths/to_pepper.tres
-res://paths/to_sunny.tres
-res://paths/to_Windows.tres
-res://paths/to_bolt.tres
-res://paths/to_smokey.tres
-res://paths/to_spots.tres
-res://paths/to_shadow.tres
-res://paths/to_Scanner 1.tres
-res://paths/to_Scanner 2.tres
-res://paths/to_Scanner 3.tres
-res://paths/to_Plague.tres
-res://paths/to_socks.tres
-res://paths/to_misty.tres
-res://paths/to_gabriel.tres
