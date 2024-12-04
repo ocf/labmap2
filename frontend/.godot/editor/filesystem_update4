@@ -1,0 +1,7 @@
+res://scenes/floor_map.tscn
+res://scripts/http_request_node.gd
+res://scenes/waddles.tscn
+res://scenes/log_display.tscn
+res://scripts/devices.gd
+res://scripts/floor_map.gd
+res://name_dictionary.json

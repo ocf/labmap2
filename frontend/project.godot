@@ -17,9 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Devices="res://scripts/devices.gd"
-Logger="*res://scripts/logger.gd"
 HttpRequestNode="*res://scripts/http_request_node.gd"
+Logger="*res://scripts/logger.gd"
+Devices="res://scripts/devices.gd"
 
 [display]
 

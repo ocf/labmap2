@@ -1,10 +1,11 @@
 '''
 This script assigns data and identification to the devices on the Devices tilemaplayer.
-It does this by querying information from data_generator.py (or sample_data.json)
+It does this by querying information from the data generator (or sample_data.json)
 and assigning it via the names_dictionary.json, which contains a list of the device
 coordinates as they appear on the tilemaplayer and their corresponding names.
 After this, it assigns additional information such as the device's on/off status,
 the device's logged-in status, and the user which is logged in.
+Furthermore, the data can be overwritten via the API to set custom statuses.
 Finally, based on the Update_Timer node in the floor_map scene, it re-queries this
 information so that all the devices and their information remains up-to-date.
 '''
@@ -17,6 +18,8 @@ const SampleData = "res://sample_data.json"
 var device_coordinates = {}
 var sample_data = {}
 var data = {}
+var overwrite_data = {}
+var overwrite_list = []
 
 @onready var devices = populate_blank_desktops()
 @onready var update_timer = Timer.new()
@@ -24,8 +27,8 @@ var data = {}
 func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
 	assign_names_to_desktops(devices)
-	populate_devices(load_json_file(SampleData))
-	#populate_devices(data)
+	#populate_devices(load_json_file(SampleData))
+	populate_devices(data, overwrite_data)
 	Logger.log("Devices array populated", "status_change", "ALL_DEVICES")
 	update_desktop_displays()
 
@@ -55,12 +58,25 @@ func assign_names_to_desktops(devices_var: Array):
 			device.name = device_coordinates[coord]
 	Logger.log("Devices array names assigned", "status_change", "ALL_DEVICES")
 
-func populate_devices(data_var: Dictionary):
+func populate_devices(data_var: Dictionary, overwrite_var: Dictionary):
 	# Called by ready() and _on_update_timer_timeout()
 	# Get the 'desktops' array from the JSON
 	var desktops_array = data_var.get("desktops", [])
+	var overwrite_desktops_array = overwrite_var.get("desktops", [])
 
 	for desktop_data in desktops_array:
+		var json_name = desktop_data.get("name", "")
+		var matched_device = find_device_by_name(json_name)
+		
+		# If a matching device is found, update its properties
+		if matched_device != null and matched_device not in overwrite_list:
+			matched_device.status = desktop_data.get("status", "")
+			matched_device.logged_in = desktop_data.get("logged_in", "")
+			matched_device.user = desktop_data.get("user", "")
+		else:
+			pass
+
+	for desktop_data in overwrite_desktops_array:
 		var json_name = desktop_data.get("name", "")
 		var matched_device = find_device_by_name(json_name)
 		
@@ -78,17 +94,55 @@ func update_desktop_displays():
 		var current_atlas_coords = device.atlas_coordinates
 		var new_atlas_coords: Vector2i
 		match [device.status, current_atlas_coords]:
+			
+			# Facing front
+			# When current state is "offline"
 			["online", Vector2i(0, 1)]:
 				new_atlas_coords = Vector2i(0, 2)
 				Logger.log("Status changed to 'online'", "status_change", device.name)
-			["online", Vector2i(1, 1)]:
-				new_atlas_coords = Vector2i(1, 2)
-				Logger.log("Status changed to 'online'", "status_change", device.name)
+			["out-of-order", Vector2i(0, 1)]:
+				new_atlas_coords = Vector2i(0, 3)
+				Logger.log("Status changed to 'out-of-order'", "status_change", device.name)
+			
+			# When current state is "online"
 			["offline", Vector2i(0, 2)]:
 				new_atlas_coords = Vector2i(0, 1) 
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
+			["out-of-order", Vector2i(0, 2)]:
+				new_atlas_coords = Vector2i(0, 3) 
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
+			
+			# When current state is "out-of-order"
+			["online", Vector2i(0, 3)]:
+				new_atlas_coords = Vector2i(0, 2)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
+			["offline", Vector2i(0, 3)]:
+				new_atlas_coords = Vector2i(0, 1) 
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
+
+			# Facing back
+			# When current state is "offline"
+			["online", Vector2i(1, 1)]:
+				new_atlas_coords = Vector2i(1, 2)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
+			["out-of-order", Vector2i(1, 1)]:
+				new_atlas_coords = Vector2i(1, 3)
+				Logger.log("Status changed to 'out-of-order'", "status_change", device.name)
+			
+			# When current state is "online"
 			["offline", Vector2i(1, 2)]:
-				new_atlas_coords = Vector2i(1, 1)
+				new_atlas_coords = Vector2i(1, 1) 
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
+			["out-of-order", Vector2i(1, 2)]:
+				new_atlas_coords = Vector2i(1, 3) 
+				Logger.log("Status changed to 'offline'", "status_change", device.name)
+			
+			# When current state is "out-of-order"
+			["online", Vector2i(1, 3)]:
+				new_atlas_coords = Vector2i(1, 2)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
+			["offline", Vector2i(1, 3)]:
+				new_atlas_coords = Vector2i(1, 1) 
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			_:
 				new_atlas_coords = current_atlas_coords
@@ -122,12 +176,27 @@ func get_devices():
 	return devices
 	
 func _on_update_timer_timeout() -> void:
-	populate_devices(load_json_file(SampleData))
-	#populate_devices(data)
+	#populate_devices(load_json_file(SampleData))
+	populate_devices(data, overwrite_data)
 	update_desktop_displays()
 	
-func _on_http_request_node_result_ready() -> void:
-	data = $HTTPRequestNode.prometheus_result
+func _on_http_request_node_result_ready(endpoint: String) -> void:
+	# Connecting from HTTPRequestNode
+	if endpoint == "http://127.0.0.1:8080/generate":
+		_handle_generate_data()
+	elif endpoint == "http://127.0.0.1:8080/get":
+		_handle_get_data()
+	
+func _handle_generate_data():
+	# Called by _on_http_request_node_result_ready()
+	data = $HTTPRequestNode.result_from_generate
+
+func _handle_get_data():
+	# Called by _on_http_request_node_result_ready()
+	overwrite_data = $HTTPRequestNode.result_from_get
+	overwrite_list = []
+	for overwrite_desktop in overwrite_data.get("desktops", []):
+		overwrite_list.append(overwrite_desktop.get("name", ""))
 
 #
 # -- FILE PARSING AND DATA CONVERSION BELOW

@@ -6,10 +6,10 @@
 	"[-1, -6]": "callie",
 	"[-1, -7]": "pumpkin",
 	"[0, -8]": "fred",
-	"[-2, -3]": "Venom",
-	"[-1, -4]": "Drought",
+	"[-2, -3]": "venom",
+	"[-1, -4]": "drought",
 	"[-1, -5]": "Computer Between Drought and Venom",
-	"[0, -6]": "Blight",
+	"[0, -6]": "blight",
 	"[0, -7]": "patches",
 	"[0, 0]": "marshmellow",
 	"[0, -1]": "pickles",
@@ -27,5 +27,5 @@
 	"[2, 2]": "gabriel",
 	"[2, 1]": "misty",
 	"[3, 0]": "socks",
-	"[3, -1]": "Plague"
+	"[3, -1]": "plague"
 }

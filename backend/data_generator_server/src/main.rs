@@ -44,7 +44,7 @@ async fn generate_data() -> impl Responder {
 async fn set_custom_data(data: web::Json<DesktopWrapper>, state: web::Data<AppState>) -> impl Responder {
     let mut desktops = state.desktops.lock().unwrap();
     *desktops = data.into_inner().desktops;
-    HttpResponse::Ok().body("Custom data updated successfully")
+    HttpResponse::Ok().body("Custom data updated successfully\n")
 }
 
 // Handler to retrieve custom data

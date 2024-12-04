@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=18 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Script" path="res://scripts/floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
@@ -155,12 +155,6 @@ tile_shape = 1
 tile_size = Vector2i(128, 64)
 sources/0 = SubResource("TileSetAtlasSource_31kon")
 
-[sub_resource type="Curve2D" id="Curve2D_eqm47"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -576, 40, 0, 0, 0, 0, -387.52, -80, 0, 0, 0, 0, 32, 208, 0, 0, 0, 0, 421.12, -56)
-}
-point_count = 4
-
 [node name="Root" type="Node2D"]
 y_sort_enabled = true
 position = Vector2(0, 32)
@@ -202,13 +196,6 @@ metadata/_edit_lock_ = true
 [node name="Debug_Path_Node" type="Path2D" parent="."]
 z_index = 1
 curve = ExtResource("7_o4wex")
-
-[node name="Debug_Path_Node2" type="Path2D" parent="."]
-z_index = 1
-position = Vector2(37.8947, 0)
-scale = Vector2(1.31579, 1)
-curve = SubResource("Curve2D_eqm47")
-metadata/_edit_lock_ = true
 
 [node name="Update_Timer" type="Timer" parent="."]
 autostart = true

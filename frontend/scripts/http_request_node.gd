@@ -1,35 +1,63 @@
+'''
+This script manages the requests and data coming from the data_generator_server.
+It sends two requests to the endpoints of the data generator, one receiving processed
+data from Prometheus and another receiving data from the user-controlled API.
+They are result_from_generate and result_from_get respectively.
+In order to get these seperate requests, meta data is used to organize the results.
+Some really bad code is used to query the http_request children of their data, but
+if you can overlook that, it works fine.
+'''
+
 extends HTTPRequest
 
-@onready var prometheus_result: Dictionary = {}
+@onready var result_from_generate: Dictionary = {}
+@onready var result_from_get: Dictionary = {}
 
-signal result_ready
+signal result_ready(endpoint: String)
+
+const GENERATE = "http://127.0.0.1:8080/generate"
+const GET = "http://127.0.0.1:8080/get"
+
+var flipflop = 1 # don't ask
 
 func _ready():
+	_send_http_request(GENERATE)
+	_send_http_request(GET)
+
+func _send_http_request(url: String) -> void:
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
+	http_request.set_meta("endpoint", url)  # Store the endpoint as metadata
 	http_request.request_completed.connect(self._http_request_completed)
 
-	var error = http_request.request("http://127.0.0.1:8080/generate") # Currently setup for test environment
+	var error = http_request.request(url) # Send the request
 	if error != OK:
-		#push_error("An error occurred in the HTTP request.")
 		Logger.log("An error occurred in the HTTP request.", "Error", "DATA_GENERATOR")
 
 # Called when the HTTP request is completed.
 func _http_request_completed(result, response_code, _headers, body):
+	var endpoint: String
+ 	# this is some awful code, god forgive me
+	if flipflop == 1:
+		endpoint = get_child(2).get_meta("endpoint")
+	elif flipflop == -1:
+		endpoint = get_child(1).get_meta("endpoint")
+	flipflop = flipflop * -1
+
 	if result != HTTPRequest.RESULT_SUCCESS:
-		#push_error("Error connecting to server.")
 		Logger.log("Error connecting to data generator server", "Error", "DATA_GENERATOR")
 		return
-
 	if response_code != 200:
-		#push_error("Error: Server returned an unexpected status code %d" % response_code)
 		Logger.log("Error: Server returned an unexpected status code %d" % response_code, "Error", "DATA_GENERATOR")
 		return
 
 	var parsedResult = JSON.parse_string(body.get_string_from_utf8())
 	if parsedResult is Dictionary:
-		prometheus_result = parsedResult
-		emit_signal("result_ready")
+		if endpoint == GENERATE:
+			result_from_generate = parsedResult
+		elif endpoint == GET:
+			result_from_get = parsedResult
+		emit_signal("result_ready", endpoint)
 	else:
 		#print("Error Reading File")
 		Logger.log("Error reading data generator response", "Error", "DATA_GENERATOR")
