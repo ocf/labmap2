@@ -110,7 +110,7 @@ func update_desktop_displays():
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			["out-of-order", Vector2i(0, 2)]:
 				new_atlas_coords = Vector2i(0, 3) 
-				Logger.log("Status changed to 'offline'", "status_change", device.name)
+				Logger.log("Status changed to 'out-of-order'", "status_change", device.name)
 			
 			# When current state is "out-of-order"
 			["online", Vector2i(0, 3)]:
@@ -135,7 +135,7 @@ func update_desktop_displays():
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			["out-of-order", Vector2i(1, 2)]:
 				new_atlas_coords = Vector2i(1, 3) 
-				Logger.log("Status changed to 'offline'", "status_change", device.name)
+				Logger.log("Status changed to 'out-of-order'", "status_change", device.name)
 			
 			# When current state is "out-of-order"
 			["online", Vector2i(1, 3)]:
