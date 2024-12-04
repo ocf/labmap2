@@ -24,8 +24,8 @@ var data = {}
 func _ready():
 	device_coordinates = convert_keys_to_vector2i(load_json_file(NamesDictionary))
 	assign_names_to_desktops(devices)
-	#populate_devices(load_json_file(SampleData))
-	populate_devices(data)
+	populate_devices(load_json_file(SampleData))
+	#populate_devices(data)
 	Logger.log("Devices array populated", "status_change", "ALL_DEVICES")
 	update_desktop_displays()
 
@@ -78,17 +78,17 @@ func update_desktop_displays():
 		var current_atlas_coords = device.atlas_coordinates
 		var new_atlas_coords: Vector2i
 		match [device.status, current_atlas_coords]:
+			["online", Vector2i(0, 1)]:
+				new_atlas_coords = Vector2i(0, 2)
+				Logger.log("Status changed to 'online'", "status_change", device.name)
 			["online", Vector2i(1, 1)]:
-				new_atlas_coords = Vector2i(2, 1)
+				new_atlas_coords = Vector2i(1, 2)
 				Logger.log("Status changed to 'online'", "status_change", device.name)
-			["online", Vector2i(3, 1)]:
-				new_atlas_coords = Vector2i(4, 1)
-				Logger.log("Status changed to 'online'", "status_change", device.name)
-			["offline", Vector2i(2, 1)]:
-				new_atlas_coords = Vector2i(1, 1) 
+			["offline", Vector2i(0, 2)]:
+				new_atlas_coords = Vector2i(0, 1) 
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
-			["offline", Vector2i(4, 1)]:
-				new_atlas_coords = Vector2i(3, 1)
+			["offline", Vector2i(1, 2)]:
+				new_atlas_coords = Vector2i(1, 1)
 				Logger.log("Status changed to 'offline'", "status_change", device.name)
 			_:
 				new_atlas_coords = current_atlas_coords
@@ -98,10 +98,12 @@ func update_desktop_displays():
 
 func get_status_from_atlas(atlas_coords: Vector2i) -> String:
 	# Called by populate_devices()
-	if atlas_coords in [Vector2i(2,1), Vector2i(4,1)]:
+	if atlas_coords in [Vector2i(0,2), Vector2i(1,2)]:
 		return "online"
-	elif atlas_coords in [Vector2i(1,1), Vector2i(3,1)]:
+	elif atlas_coords in [Vector2i(0,1), Vector2i(1,1)]:
 		return "offline"
+	elif atlas_coords in [Vector2i(0,3), Vector2i(1,3)]:
+		return "out-of-order"
 	return "unknown"
 
 func find_device_by_name(name_var: String) -> Device:
@@ -120,8 +122,8 @@ func get_devices():
 	return devices
 	
 func _on_update_timer_timeout() -> void:
-	#populate_devices(load_json_file(SampleData))
-	populate_devices(data)
+	populate_devices(load_json_file(SampleData))
+	#populate_devices(data)
 	update_desktop_displays()
 	
 func _on_http_request_node_result_ready() -> void:

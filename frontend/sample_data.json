@@ -1,7 +1,25 @@
 {
 	"desktops": [
 		{
-			"name": "pumpkin",
+			"name": "tabitha",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "breezy",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "laksith"
+		},
+		{
+			"name": "lexy",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "bandit",
 			"status": "online",
 			"logged_in": "yes",
 			"user": "kinn"
@@ -10,49 +28,151 @@
 			"name": "callie",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "laksith"
+			"user": "kinn"
 		},
 		{
-			"name": "tabitha",
+			"name": "pumpkin",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "storce"
+			"user": "kinn"
+		},
+		{
+			"name": "fred",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
 		},
 		{
 			"name": "Venom",
-			"status": "offline",
-			"logged_in": "no",
-			"user": "none"
-		},
-		{
-			"name": "patches",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "jaysa"
+			"user": "kinn"
+		},
+		{
+			"name": "Drought",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Computer Between Drought and Venom",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
 		},
 		{
 			"name": "Blight",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "windy"
+			"user": "kinn"
+		},
+		{
+			"name": "patches",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "laksith"
 		},
 		{
 			"name": "marshmellow",
 			"status": "online",
 			"logged_in": "yes",
-			"user": "oliver"
+			"user": "kinn"
+		},
+		{
+			"name": "pickles",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "spud",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "pepper",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "sunny",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
 		},
 		{
 			"name": "Windows",
 			"status": "online",
-			"logged_in": "no",
-			"user": "jingwen"
+			"logged_in": "yes",
+			"user": "kinn"
 		},
 		{
-			"name": "Richard",
+			"name": "bolt",
 			"status": "online",
-			"logged_in": "no",
-			"user": "none"
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "smokey",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "spots",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "laksith"
+		},
+		{
+			"name": "shadow",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Scanner 1",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Scanner 2",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Scanner 3",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "gabriel",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "misty",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "socks",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
+		},
+		{
+			"name": "Plague",
+			"status": "online",
+			"logged_in": "yes",
+			"user": "kinn"
 		}
 	]
 }

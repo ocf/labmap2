@@ -46,11 +46,11 @@ func set_target_desktop(desktop_name: String):
 		Logger.log("No path to device %s" % desktop_name, "Warning", desktop_name)
 		return
 	# Reset the PathFollow2D position and start movement
-	path_follow.h_offset = -580
-	path_follow.v_offset = 10
+	path_follow.h_offset = 0
+	path_follow.v_offset = 0
 	path_follow.progress_ratio = 0
 	path_length = path_2d.curve.get_baked_length()
-	speed = 1.0 / (travel_duration * (path_length / 400))
+	speed = speed / (travel_duration * (path_length / 400))
 
 func walk_back_to_door():
 	# Called by spawn_waddles_if_logged_in() in floor_map.gd

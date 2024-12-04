@@ -30,14 +30,12 @@ y_sort_enabled = true
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 y_sort_enabled = true
-position = Vector2(-576, 32)
-rotation = -0.514451
 rotates = false
 loop = false
 
 [node name="Waddles" type="AnimatedSprite2D" parent="Path2D/PathFollow2D"]
+show_behind_parent = true
 y_sort_enabled = true
-position = Vector2(517.19, 255.567)
-rotation = 0.514451
+position = Vector2(0, -27)
 sprite_frames = SubResource("SpriteFrames_o5jgv")
 script = ExtResource("4_pfnef")
