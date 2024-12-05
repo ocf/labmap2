@@ -64,7 +64,7 @@ texture_region_size = Vector2i(160, 120)
 3:1/0 = 0
 3:1/0/texture_origin = Vector2i(12, 18)
 3:1/0/z_index = 1
-3:1/0/y_sort_origin = 2
+3:1/0/y_sort_origin = -40
 3:0/0 = 0
 3:0/0/texture_origin = Vector2i(-16, 11)
 3:0/0/z_index = 1
@@ -97,12 +97,13 @@ texture_region_size = Vector2i(160, 120)
 8:2/0/z_index = 1
 8:0/size_in_atlas = Vector2i(2, 2)
 8:0/0 = 0
-8:0/0/z_index = 1
 10:0/0 = 0
 10:0/0/z_index = 1
+10:0/0/y_sort_origin = -40
 2:1/0 = 0
 2:1/0/texture_origin = Vector2i(-12, 18)
 2:1/0/z_index = 1
+2:1/0/y_sort_origin = -40
 0:2/animation_columns = 2
 0:2/animation_separation = Vector2i(1, 1)
 0:2/animation_frame_0/duration = 1.0
@@ -140,19 +141,25 @@ sources/1 = SubResource("TileSetAtlasSource_dqocb")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31kon"]
 resource_name = "Wall Sheet"
 texture = ExtResource("3_85vmw")
-texture_region_size = Vector2i(64, 64)
+texture_region_size = Vector2i(160, 80)
 0:0/size_in_atlas = Vector2i(1, 3)
 0:0/0 = 0
-0:0/0/texture_origin = Vector2i(48, 97)
+0:0/0/texture_origin = Vector2i(-59, 50)
 0:0/0/z_index = -1
 1:0/size_in_atlas = Vector2i(1, 3)
 1:0/0 = 0
-1:0/0/texture_origin = Vector2i(48, 129)
+1:0/0/texture_origin = Vector2i(59, 50)
 1:0/0/z_index = -1
+2:0/size_in_atlas = Vector2i(1, 3)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(-59, 50)
+3:0/size_in_atlas = Vector2i(1, 3)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(59, 50)
 
 [sub_resource type="TileSet" id="TileSet_lrubo"]
 tile_shape = 1
-tile_size = Vector2i(128, 64)
+tile_size = Vector2i(160, 80)
 sources/0 = SubResource("TileSetAtlasSource_31kon")
 
 [node name="Root" type="Node2D"]
@@ -167,21 +174,20 @@ tile_set = SubResource("TileSet_ssnwc")
 metadata/_edit_lock_ = true
 
 [node name="Walls" type="TileMapLayer" parent="."]
-visible = false
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAD7//z/AAAAAAAAAAD7//v/AAAAAAAAAAD8//r/AAAAAAAAAAD8//n/AAAAAAAAAAD9//j/AAAAAAAAAAD9//f/AAAAAAAAAAD+//b/AAAAAAAAAAD+//X/AAAAAAAAAAD///T/AAAAAAAAAAD///X/AAABAAAAAAAAAPb/AAABAAAAAAAAAPf/AAABAAAAAAABAPj/AAABAAAAAAABAPn/AAABAAAAAAACAPr/AAABAAAAAAACAPv/AAABAAAAAAADAPz/AAABAAAAAAADAP3/AAABAAAAAAAEAP7/AAABAAAAAAA=")
+tile_map_data = PackedByteArray("AAAEAP7/AAADAAAAAAADAP3/AAADAAAAAAADAPz/AAADAAAAAAACAPv/AAADAAAAAAACAPr/AAADAAAAAAABAPn/AAADAAAAAAABAPj/AAADAAAAAAAAAPf/AAADAAAAAAAAAPb/AAADAAAAAAD///X/AAADAAAAAAD+//X/AAAAAAAAAAD+//b/AAAAAAAAAAD9//f/AAAAAAAAAAD9//j/AAAAAAAAAAD8//n/AAAAAAAAAAD8//r/AAAAAAAAAAD7//v/AAAAAAAAAAD7//z/AAAAAAAAAAD6//3/AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_lrubo")
 metadata/_edit_lock_ = true
 
 [node name="Tables" type="TileMapLayer" parent="."]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAAAAEAAgAAAAAAAAAAAAAAAgADAAAAAAADAP//AgAFAAAAAAADAAAAAgAEAAAAAAACAAEAAgAEAAAAAAACAAIAAgAEAAAAAAABAAMAAgADAAAAAAD+//z/AgAEAAAAAAAAAAUAAgAFAAAAAAAAAAYAAgAEAAAAAAD//wcAAgADAAAAAAD7//7/AgAGAAAAAAD8//v/AgABAAAAAAD7//3/AgAGAAAAAAD+//v/AgAEAAAAAAD///r/AgAEAAAAAAD///n/AgAEAAAAAAAAAPj/AgAFAAAAAAD///z/AgABAAAAAAD///v/AgABAAAAAAAAAPr/AgABAAAAAAAAAPn/AgACAAAAAAABAAAAAgABAAAAAAABAP//AgABAAAAAAACAP7/AgABAAAAAAACAP3/AgACAAAAAAAAAP//AgAEAAAAAAABAP7/AgAEAAAAAAABAP3/AgAEAAAAAAACAPz/AgAFAAAAAAD+//3/AgAAAAAAAAD9//3/AgAGAAAAAAD+//j/AgACAAEAAAD+//f/AgACAAEAAAD///f/AgADAAEAAAA=")
+tile_map_data = PackedByteArray("AAAAAAEAAgAAAAAAAAAAAAAAAgADAAAAAAADAP//AgAFAAAAAAADAAAAAgAEAAAAAAACAAEAAgAEAAAAAAACAAIAAgAEAAAAAAABAAMAAgADAAAAAAD+//z/AgAEAAAAAAAAAAUAAgAFAAAAAAAAAAYAAgAEAAAAAAD//wcAAgADAAAAAAD7//7/AgAGAAAAAAD8//v/AgABAAAAAAD7//3/AgAGAAAAAAD+//v/AgAEAAAAAAD///r/AgAEAAAAAAD///n/AgAEAAAAAAAAAPj/AgAFAAAAAAD///z/AgABAAAAAAD///v/AgABAAAAAAAAAPr/AgABAAAAAAAAAPn/AgACAAAAAAABAAAAAgABAAAAAAABAP//AgABAAAAAAACAP7/AgABAAAAAAACAP3/AgACAAAAAAAAAP//AgAEAAAAAAABAP7/AgAEAAAAAAABAP3/AgAEAAAAAAACAPz/AgAFAAAAAAD+//3/AgAAAAAAAAD9//3/AgAGAAAAAAD+//j/AgACAAEAAAD+//f/AgACAAEAAAD///f/AgADAAEAAAD///j/AgAKAAAAAAA=")
 tile_set = SubResource("TileSet_ssnwc")
 metadata/_edit_lock_ = true
 
 [node name="Devices" type="TileMapLayer" parent="."]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAD+//3/AgAAAAEAAAD///z/AgAAAAEAAAD///v/AgAAAAEAAAAAAPr/AgAAAAEAAAAAAPn/AgAAAAEAAAD+//z/AgABAAEAAAD+//v/AgABAAEAAAD///r/AgABAAEAAAD///n/AgABAAEAAAAAAPj/AgABAAEAAAAAAAEAAgAAAAEAAAABAAAAAgAAAAEAAAABAP//AgAAAAEAAAACAP7/AgAAAAEAAAACAP3/AgAAAAEAAAAAAAAAAgABAAEAAAAAAP//AgABAAEAAAABAP7/AgABAAEAAAABAP3/AgABAAEAAAACAPz/AgABAAEAAAACAAIAAgABAAEAAAACAAEAAgABAAEAAAADAAAAAgABAAEAAAADAP//AgABAAEAAAAAAAUAAgABAAEAAAAAAAYAAgABAAEAAAD//wcAAgABAAEAAAD7//7/AgABAAEAAAD9//3/AgABAAEAAAA=")
+tile_map_data = PackedByteArray("AAD+//3/AgAAAAEAAAD///z/AgAAAAEAAAD///v/AgAAAAEAAAAAAPr/AgAAAAEAAAAAAPn/AgAAAAEAAAD+//z/AgABAAEAAAD+//v/AgABAAEAAAD///r/AgABAAEAAAD///n/AgABAAEAAAAAAPj/AgABAAEAAAAAAAEAAgAAAAEAAAABAAAAAgAAAAEAAAABAP//AgAAAAEAAAACAP7/AgAAAAEAAAACAP3/AgAAAAEAAAAAAAAAAgABAAEAAAAAAP//AgABAAEAAAABAP7/AgABAAEAAAABAP3/AgABAAEAAAACAPz/AgABAAEAAAACAAIAAgABAAEAAAACAAEAAgABAAEAAAADAAAAAgABAAEAAAADAP//AgABAAEAAAAAAAUAAgABAAEAAAAAAAYAAgABAAEAAAD//wcAAgABAAEAAAD9//3/AgABAAEAAAD7//7/AgABAAEAAAA=")
 tile_set = SubResource("TileSet_ssnwc")
 script = ExtResource("4_w6f35")
 metadata/_edit_lock_ = true
@@ -211,14 +217,12 @@ offset_right = -798.0
 offset_bottom = 402.0
 
 [node name="BackgroundLight" type="Sprite2D" parent="."]
-visible = false
 z_index = -3
-position = Vector2(-31, -63)
+position = Vector2(-32, -64)
 texture = ExtResource("10_graqh")
 script = ExtResource("11_aijb1")
 
 [node name="BackgroundDark" type="Sprite2D" parent="."]
-visible = false
 z_index = -4
 position = Vector2(-31, -63)
 texture = ExtResource("11_e0kwo")
