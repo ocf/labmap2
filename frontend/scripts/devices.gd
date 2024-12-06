@@ -182,9 +182,9 @@ func _on_update_timer_timeout() -> void:
 	
 func _on_http_request_node_result_ready(endpoint: String) -> void:
 	# Connecting from HTTPRequestNode
-	if endpoint == "http://127.0.0.1:8080/generate":
+	if endpoint == $HTTPRequestNode.GENERATE:
 		_handle_generate_data()
-	elif endpoint == "http://127.0.0.1:8080/get":
+	elif endpoint == $HTTPRequestNode.GET:
 		_handle_get_data()
 	
 func _handle_generate_data():

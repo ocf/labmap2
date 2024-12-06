@@ -15,8 +15,8 @@ extends HTTPRequest
 
 signal result_ready(endpoint: String)
 
-const GENERATE = "http://127.0.0.1:8080/generate"
-const GET = "http://127.0.0.1:8080/get"
+const GENERATE = "https://kinn-edendev.com/api/generate"
+const GET = "https://kinn-edendev.com/api/get"
 
 var flipflop = 1 # don't ask
 
