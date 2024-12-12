@@ -1,7 +1,7 @@
 ## Instructions
 
     docker build -t data_generator_server:latest .
-    docker run --env-file .env -p 8080:8080 data_generator_server:latest
+    docker run --env-file .env -p 8081:8081 --name data_generator_server data_generator_server:latest
 
 ## Using the API (Example)
 Sending a POST /set command to the data generator server updates the list of overwrites, useful for when a device needs a custom status
