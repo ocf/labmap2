@@ -1,0 +1,4 @@
+backend/data_generator_server/.env
+backend/data_generator_server/target/
+frontend/labmap2/export/
+frontend/labmap2_server/target/
