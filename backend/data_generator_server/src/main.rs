@@ -74,6 +74,7 @@ async fn main() -> std::io::Result<()> {
             .route("/generate", web::get().to(generate_data))
             .route("/set", web::post().to(set_custom_data))
             .route("/get", web::get().to(get_custom_data))
+            .route("/health", web::get().to(HttpResponse::Ok))
     })
 
     .bind("0.0.0.0:8081")?
