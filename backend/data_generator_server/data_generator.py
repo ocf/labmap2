@@ -27,7 +27,6 @@ login_query = 'node_logged_in_user{host_type="desktop"}'
 def query_prometheus(query):
     """ Query Prometheus and return the result """
     response = requests.get(prometheus_url, params={'query': query}, auth=('ocflabmap2', prometheus_password))
-#    response = requests.get(prometheus_url, params={'query': query}, auth=('ocflabmap2', 'YcU4aVdmtIUf6RZ'))
     if response.status_code == 200:
         result = response.json()['data']['result']
         return result
