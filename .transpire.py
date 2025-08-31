@@ -25,12 +25,11 @@ def add_labmap_common(dep):
     ]
 
 
-def add_probes(dep, path="/"):
+def add_probes(dep, path="/health"):
     dep.obj.spec.template.spec.containers[0].readiness_probe = {
         "httpGet": {
             "path": path,
-            "port": 8000,
-            "httpHeaders": [{"name": "Host", "value": "www.ocf.berkeley.edu"}],
+            "port": 80,
         },
         "initialDelaySeconds": 5,
         "periodSeconds": 5,
@@ -39,8 +38,7 @@ def add_probes(dep, path="/"):
     dep.obj.spec.template.spec.containers[0].liveness_probe = {
         "httpGet": {
             "path": path,
-            "port": 8000,
-            "httpHeaders": [{"name": "Host", "value": "www.ocf.berkeley.edu"}],
+            "port": 80,
         },
         "initialDelaySeconds": 10,
         "timeoutSeconds": 3,
@@ -59,7 +57,7 @@ def objects():
     dep_backend = Deployment(
         name="labmap-backend",
         image=get_image_tag("backend"),
-        ports=[8081],
+        ports=[8080],
     )
     add_labmap_common(dep_backend)
     add_probes(dep_backend)
@@ -76,7 +74,7 @@ def objects():
     svc_backend = Service(
         name="labmap2-backend",
         selector=dep_backend.get_selector(),
-        port_on_pod=8081,
+        port_on_pod=8080,
         port_on_svc=80,
     )
     yield svc_backend.build()
