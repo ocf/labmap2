@@ -13,14 +13,18 @@ extends HTTPRequest
 @onready var result_from_generate: Dictionary = {}
 @onready var result_from_get: Dictionary = {}
 
-signal result_ready(endpoint: String)
+var GENERATE;
+var GET;
+var env_vars = {};
 
-const GENERATE = "https://kinn-edendev.com/api/generate"
-const GET = "https://kinn-edendev.com/api/get"
+signal result_ready(endpoint: String)
 
 var flipflop = 1 # don't ask
 
 func _ready():
+	load_env("res://.env")
+	GENERATE = env_vars["GENERATE_URI"]
+	GET = env_vars["GET_URI"]
 	_send_http_request(GENERATE)
 	_send_http_request(GET)
 
@@ -64,3 +68,17 @@ func _http_request_completed(result, response_code, _headers, body):
 
 func _on_update_timer_timeout() -> void:
 	_ready()
+	
+func load_env(path: String):
+	if not FileAccess.file_exists(path):
+		push_warning(".env file not found at " + path)
+		return
+	
+	var file = FileAccess.open(path, FileAccess.READ)
+	while not file.eof_reached():
+		var line = file.get_line().strip_edges()
+		if line == "" or line.begins_with("#"): # skip comments/empty
+			continue
+		var parts = line.split("=", true, 1)
+		if parts.size() == 2:
+			env_vars[parts[0].strip_edges()] = parts[1].strip_edges()
