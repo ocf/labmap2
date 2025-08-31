@@ -19,8 +19,8 @@ extends HTTPRequest
 #var GET;
 var env_vars = {};
 
-const GENERATE = "https://labmap.ocf.berkeley.edu/generate"
-const GET = "https://labmap.ocf.berkeley.edu/get"
+const GENERATE = "https://labmap.ocf.berkeley.edu/api/generate"
+const GET = "https://labmap.ocf.berkeley.edu/api/get"
 
 signal result_ready(endpoint: String)
 

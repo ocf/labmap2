@@ -71,9 +71,9 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(move || {
         App::new()
             .app_data(shared_state.clone()) // Register shared state with the app
-            .route("/generate", web::get().to(generate_data))
-            .route("/set", web::post().to(set_custom_data))
-            .route("/get", web::get().to(get_custom_data))
+            .route("/api/generate", web::get().to(generate_data))
+            .route("/api/set", web::post().to(set_custom_data))
+            .route("/api/get", web::get().to(get_custom_data))
             .route("/health", web::get().to(HttpResponse::Ok))
     })
 
