@@ -4,20 +4,20 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1756601418|35017399';
+const CACHE_VERSION = '1756601731|30770710';
 /** @type {string} */
 const CACHE_PREFIX = 'Labmap2-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
 const OFFLINE_URL = 'Labmap2.offline.html';
 /** @type {boolean} */
-const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = false;
+const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
 const CACHED_FILES = ["Labmap2.html","Labmap2.js","Labmap2.offline.html","Labmap2.icon.png","Labmap2.apple-touch-icon.png","Labmap2.worker.js","Labmap2.audio.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHABLE_FILES = ["Labmap2.wasm","Labmap2.pck","Labmap2.side.wasm"];
+const CACHABLE_FILES = ["Labmap2.wasm","Labmap2.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHABLE_FILES);
 
 self.addEventListener('install', (event) => {
