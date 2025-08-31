@@ -13,18 +13,23 @@ extends HTTPRequest
 @onready var result_from_generate: Dictionary = {}
 @onready var result_from_get: Dictionary = {}
 
-var GENERATE;
-var GET;
+# This was part of a dynamic endpoint structure using an .env
+# We ended up hard coding the endpoints instead.
+#var GENERATE;
+#var GET;
 var env_vars = {};
+
+const GENERATE = "https://labmap.ocf.berkeley.edu/generate"
+const GET = "https://labmap.ocf.berkeley.edu/get"
 
 signal result_ready(endpoint: String)
 
 var flipflop = 1 # don't ask
 
 func _ready():
-	load_env("res://.env")
-	GENERATE = env_vars["GENERATE_URI"]
-	GET = env_vars["GET_URI"]
+#	load_env("res://.env")
+#	GENERATE = env_vars["GENERATE_URI"]
+#	GET = env_vars["GET_URI"]
 	_send_http_request(GENERATE)
 	_send_http_request(GET)
 
