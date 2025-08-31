@@ -1,4 +1,4 @@
-use actix_web::{web, App, HttpServer, Responder, HttpResponse};
+use actix_web::{web, App, HttpServer, Responder, HttpResponse, middleware};
 use std::process::Command;
 use std::sync::Mutex;
 use serde::{Deserialize, Serialize};
@@ -71,6 +71,10 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(move || {
         App::new()
             .app_data(shared_state.clone()) // Register shared state with the app
+	    .wrap(middleware::NormalizePath::new(middleware::TrailingSlash::Trim)) 
+            .wrap(middleware::DefaultHeaders::new()
+ 	    	.add((actix_web::http::header::CONTENT_ENCODING, "identity"))
+            )
             .route("/api/generate", web::get().to(generate_data))
             .route("/api/set", web::post().to(set_custom_data))
             .route("/api/get", web::get().to(get_custom_data))

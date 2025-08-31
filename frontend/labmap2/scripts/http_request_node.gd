@@ -36,10 +36,14 @@ func _ready():
 func _send_http_request(url: String) -> void:
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
+	var headers = [
+		"Accept: application/json",
+		"Accept-Encoding: identity"
+	]
 	http_request.set_meta("endpoint", url)  # Store the endpoint as metadata
 	http_request.request_completed.connect(self._http_request_completed)
 
-	var error = http_request.request(url) # Send the request
+	var error = http_request.request(url,headers) # Send the request
 	if error != OK:
 		Logger.log("An error occurred in the HTTP request.", "Error", "DATA_GENERATOR")
 
