@@ -1,24 +1,15 @@
 res://paths/to_bandit.tres::72dbe0351cd27c4f4ff84c98cdbbc202::1733372300::res://.godot/exported/133200997/export-9c86d45cb41415e2404a602439fc4825-to_bandit.res
-res://paths/to_blight.tres::8270c1356009fc845239c3f9e409fbeb::1733372300::res://.godot/exported/133200997/export-9c484a21e94641369473f45204021cb3-to_blight.res
 res://paths/to_bolt.tres::b0cf2298ad35ccaf91f6fe485100e2f1::1733372300::res://.godot/exported/133200997/export-d07c508fda5606dedc1fc4f9a0e5c51c-to_bolt.res
 res://paths/to_breezy.tres::837a2dd5d9098dca01257bba87989681::1733372300::res://.godot/exported/133200997/export-547ed5e8adfe95c078c89b31a95d3a8b-to_breezy.res
 res://paths/to_callie.tres::c3ef2f0d7715a361543c685b05c787a1::1733372300::res://.godot/exported/133200997/export-7eea721142a26f0f26fa3b737e8d629f-to_callie.res
-res://paths/to_Computer Between Drought and Venom.tres::3eb1dbfbfc7682974f5a3e0c83b2b3e4::1733372300::res://.godot/exported/133200997/export-9106452bec5328b5c1366f55a6615092-to_Computer Between Drought and Venom.res
-res://paths/to_drought.tres::75e1a051c78b86e9e465ba156a71958e::1733372300::res://.godot/exported/133200997/export-4f415d8ebb273473ebee8babb3e2bdc8-to_drought.res
 res://paths/to_fred.tres::54e1596c0fa0d83398d7e5fbaa32e220::1733372300::res://.godot/exported/133200997/export-2ab33396f2f6a679a2fa3e4def1c5ad9-to_fred.res
 res://paths/to_gabriel.tres::0b3a3dc8c07e2153d5e11ad56e943d11::1733372300::res://.godot/exported/133200997/export-9d3e60cf1ae65b757486f2075a8b44bb-to_gabriel.res
 res://paths/to_lexy.tres::0cfc6aa80f908fa31010319145343321::1733372300::res://.godot/exported/133200997/export-ecf01dffc7f87c0091129e6763c8d19d-to_lexy.res
-res://paths/to_marshmellow.tres::df69fd718dba54098d8fa6942e2af70f::1733372300::res://.godot/exported/133200997/export-2189958d68226f8d24cbf8bdf5aa107f-to_marshmellow.res
-res://paths/to_misty.tres::d5bb8a5bb14ecc2824c774b3e2462257::1733372300::res://.godot/exported/133200997/export-27b1a06e2737fd440404ab8666442f52-to_misty.res
 res://paths/to_patches.tres::2a1ca2c1ed108ede3260936f5c0045bb::1733372300::res://.godot/exported/133200997/export-7baf7ace4535cf4c46926adbd94fc885-to_patches.res
 res://paths/to_pepper.tres::b4834d258753f652e16dc0bc840a4117::1733372300::res://.godot/exported/133200997/export-d1c2202f152da6fac8f6adb4f9504326-to_pepper.res
 res://paths/to_pickles.tres::2968442968b4363815ddcee98ea27dac::1733372300::res://.godot/exported/133200997/export-56b3aa8bf5a1da67fac9bcdee7150cd7-to_pickles.res
 res://paths/to_plague.tres::8b1208c5b7a81981c2cdcc42418dda3b::1733372300::res://.godot/exported/133200997/export-6f91e647c7246c03df0bd7c64abbabf4-to_plague.res
-res://paths/to_Plague.tres::8b1208c5b7a81981c2cdcc42418dda3b::1733455554::res://.godot/exported/133200997/export-5610fc7f660d6abff4b4c7cd23fdfcb1-to_Plague.res
 res://paths/to_pumpkin.tres::b0f21d7222fa47e4a30d6af3c1e7d871::1733372300::res://.godot/exported/133200997/export-165ba3af72dbe650e02b602fe68b233a-to_pumpkin.res
-res://paths/to_Scanner 1.tres::0743a87390682ebf3aaad420352e73da::1733372300::res://.godot/exported/133200997/export-28004ba5d26a193d524cba9b6aacedce-to_Scanner 1.res
-res://paths/to_Scanner 2.tres::f6d3f402cb568b27af46453205310c53::1733372300::res://.godot/exported/133200997/export-080936dcaaed0e328781fe0f19d9e284-to_Scanner 2.res
-res://paths/to_Scanner 3.tres::5dab76d47b4c64f423dde6426d88f5cb::1733372300::res://.godot/exported/133200997/export-9eb54518f2c5cdad440e375042495548-to_Scanner 3.res
 res://paths/to_shadow.tres::d8588e81488b16ac012f0b8faa4928b3::1733372300::res://.godot/exported/133200997/export-62f31136cdb6e4818fc0c9ac3d1e5899-to_shadow.res
 res://paths/to_smokey.tres::d36385275fcc4b18934b324ceb13c062::1733372300::res://.godot/exported/133200997/export-cf031705fc86ff8b0c6dd4e01aa8b4d8-to_smokey.res
 res://paths/to_socks.tres::2f2cd96dbe49a434881181b8dee42690::1733372300::res://.godot/exported/133200997/export-c22de75973cb7ff7ea182221520cba77-to_socks.res
@@ -26,8 +17,16 @@ res://paths/to_spots.tres::783d2412ed3c7e8082dd9ba87841c011::1733372300::res://.
 res://paths/to_spud.tres::067a0e9add840e14f969d19954a35f03::1733372300::res://.godot/exported/133200997/export-aa2b423afb9fa3e6b4498ab4a5e2469f-to_spud.res
 res://paths/to_sunny.tres::53444b44d735051612907dad52cf7b7b::1733372300::res://.godot/exported/133200997/export-cada93e8afac84795deb90a935673d7d-to_sunny.res
 res://paths/to_tabitha.tres::d387ecfe3172cc060400471abdb312ea::1733372300::res://.godot/exported/133200997/export-79e0c3f09a14c9cecb31cc45b6b989ba-to_tabitha.res
-res://paths/to_venom.tres::981efc5b3785616b739485331e190414::1733372300::res://.godot/exported/133200997/export-2925114d8e40a04b149bdd326923844a-to_venom.res
 res://paths/to_Windows.tres::58f8c3d335e2aef7783aa87089c498c8::1733372300::res://.godot/exported/133200997/export-60f8b164b2282d0eac4c6689da89a0a6-to_Windows.res
-res://scenes/floor_map.tscn::e6ae56aa7769ac3af2b8264e485623a5::1733456261::res://.godot/exported/133200997/export-b8367499dc2d207b9c9e1350390b266a-floor_map.scn
+res://scenes/floor_map.tscn::b77272107acfdcfa4c37a52e5a2b5cc2::1756599794::res://.godot/exported/133200997/export-b8367499dc2d207b9c9e1350390b266a-floor_map.scn
 res://scenes/log_display.tscn::7941dd644f902ff56d0bdbaee4427158::1733440536::res://.godot/exported/133200997/export-51d5c27b22ee0ca0bf6fcd02b835986e-log_display.scn
 res://scenes/waddles.tscn::a5ea82a6ba2d83c1f03d72b1be011ecd::1733440536::res://.godot/exported/133200997/export-4611cce7e97e351a3795cc2d42161d58-waddles.scn
+res://paths/to_cocoa.tres::3eb1dbfbfc7682974f5a3e0c83b2b3e4::1733372300::res://.godot/exported/133200997/export-6b990d4e482b8a77e68f06524e755b33-to_cocoa.res
+res://paths/to_ginger.tres::75e1a051c78b86e9e465ba156a71958e::1733372300::res://.godot/exported/133200997/export-a978b86779ffbf31cf7524964f27295f-to_ginger.res
+res://paths/to_gozer.tres::5dab76d47b4c64f423dde6426d88f5cb::1733372300::res://.godot/exported/133200997/export-a762e143ae2ab0f10bfd41edb1ca5b8f-to_gozer.res
+res://paths/to_mack.tres::b4834d258753f652e16dc0bc840a4117::1733372300::res://.godot/exported/133200997/export-48b6993267b99f764ffd44141a896e50-to_mack.res
+res://paths/to_marshmallow.tres::2a1ca2c1ed108ede3260936f5c0045bb::1733372300::res://.godot/exported/133200997/export-e998187feeb6ae0a692b5a736579fb3d-to_marshmallow.res
+res://paths/to_peaches.tres::0cfc6aa80f908fa31010319145343321::1733372300::res://.godot/exported/133200997/export-76fa7b9b4bf5577ce2bb35a984535ce1-to_peaches.res
+res://paths/to_princess.tres::837a2dd5d9098dca01257bba87989681::1733372300::res://.godot/exported/133200997/export-e16001405601c13e92ed6e2b371e706f-to_princess.res
+res://paths/to_rascal.tres::2968442968b4363815ddcee98ea27dac::1733372300::res://.godot/exported/133200997/export-259c3cbbcd8175ac3fd3e77265555d05-to_rascal.res
+res://paths/to_speckles.tres::0743a87390682ebf3aaad420352e73da::1733372300::res://.godot/exported/133200997/export-e042f7292df4a12f19b99f8b9ef43336-to_speckles.res
