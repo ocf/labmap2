@@ -86,3 +86,10 @@ def objects():
         path_prefix="/",
     )
     yield ing_frontend.build()
+
+    ing_backend = Ingress.from_svc(
+        svc=svc_backend,
+        host="labmap.ocf.berkeley.edu",
+        path_prefix="/api",
+    )
+    yield ing_backend.build()
