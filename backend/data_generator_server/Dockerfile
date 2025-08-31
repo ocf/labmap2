@@ -21,7 +21,7 @@ COPY --from=builder /app/target/release/data_generator_server ./data_generator_s
 
 ENV RUST_BACKTRACE=1
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD ["./data_generator_server"]
 
