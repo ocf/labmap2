@@ -17,19 +17,11 @@ def add_labmap_common(dep):
     dep.obj.spec.template.spec.dns_policy = "ClusterFirst"
     dep.obj.spec.template.spec.dns_config = {"searches": ["ocf.berkeley.edu"]}
 
-    dep.pod_spec().with_secret_env("labmap2")
-
-    dep.obj.spec.template.spec.containers[0].env = [
-        {"name": "GENERATE_URI", "value": "labmap2-backend/generate"},
-        {"name": "GET_URI", "value": "labmap2-backend/get"},
-    ]
-
-
 def add_probes(dep, path="/health"):
     dep.obj.spec.template.spec.containers[0].readiness_probe = {
         "httpGet": {
             "path": path,
-            "port": 80,
+            "port": 8080,
         },
         "initialDelaySeconds": 5,
         "periodSeconds": 5,
@@ -38,7 +30,7 @@ def add_probes(dep, path="/health"):
     dep.obj.spec.template.spec.containers[0].liveness_probe = {
         "httpGet": {
             "path": path,
-            "port": 80,
+            "port": 8080,
         },
         "initialDelaySeconds": 10,
         "timeoutSeconds": 3,
@@ -61,6 +53,7 @@ def objects():
     )
     add_labmap_common(dep_backend)
     add_probes(dep_backend)
+    dep_backend.pod_spec().with_secret_env("labmap2")
     yield dep_backend.build()
 
     dep_frontend = Deployment(
