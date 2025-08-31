@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1756615699|173941230';
+const CACHE_VERSION = '1756616548|48478933';
 /** @type {string} */
 const CACHE_PREFIX = 'Labmap2-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;

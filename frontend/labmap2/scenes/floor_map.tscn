@@ -192,6 +192,7 @@ script = ExtResource("4_w6f35")
 metadata/_edit_lock_ = true
 
 [node name="HTTPRequestNode" type="HTTPRequest" parent="Devices"]
+accept_gzip = false
 script = ExtResource("9_wcwvr")
 
 [node name="Viewport" type="Camera2D" parent="."]

@@ -35,7 +35,6 @@ func _ready():
 
 func _send_http_request(url: String) -> void:
 	var http_request = HTTPRequest.new()
-	http_request.accept_gzip = true
 	add_child(http_request)
 	http_request.set_meta("endpoint", url)  # Store the endpoint as metadata
 	http_request.request_completed.connect(self._http_request_completed)
