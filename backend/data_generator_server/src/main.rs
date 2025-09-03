@@ -66,7 +66,7 @@ async fn get_custom_data(state: web::Data<AppState>) -> impl Responder {
 
 async fn get_hours() -> impl Responder {
     // Replace with local path to your YAML file
-    let path = "./data/hours.yaml";
+    let path = "./hours.yaml";
 
     match fs::read_to_string(path) {
         Ok(contents) => HttpResponse::Ok()
@@ -78,7 +78,7 @@ async fn get_hours() -> impl Responder {
 
 async fn refresh_hours_file() {
     let url = "https://github.com/ocf/etc/raw/refs/heads/master/configs/hours.yaml";
-    let path = "./data/hours.yaml";
+    let path = "./hours.yaml";
 
     let client = reqwest::Client::new();
     let mut interval = time::interval(Duration::from_secs(1800)); // every 30 min
