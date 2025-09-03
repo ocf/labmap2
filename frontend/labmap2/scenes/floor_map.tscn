@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=20 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Script" path="res://scripts/floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c7hy84ujceanw" path="res://art/wall_sheet.png" id="3_85vmw"]
 [ext_resource type="Script" path="res://scripts/devices.gd" id="4_w6f35"]
 [ext_resource type="Script" path="res://scripts/logger.gd" id="7_5mbbv"]
+[ext_resource type="Curve2D" uid="uid://r8t7n7pqbnov" path="res://paths/to_misty.tres" id="7_ss1oq"]
 [ext_resource type="PackedScene" uid="uid://brs2mnfeqqby3" path="res://scenes/log_display.tscn" id="8_y67md"]
 [ext_resource type="Script" path="res://scripts/http_request_node.gd" id="9_wcwvr"]
 [ext_resource type="Texture2D" uid="uid://dtlrn0pyxevuv" path="res://art/background.png" id="10_graqh"]
@@ -167,6 +168,7 @@ sources/0 = SubResource("TileSetAtlasSource_31kon")
 y_sort_enabled = true
 position = Vector2(0, 32)
 script = ExtResource("1_423c3")
+metadata/_edit_lock_ = true
 
 [node name="Floor" type="TileMapLayer" parent="."]
 y_sort_enabled = true
@@ -203,6 +205,7 @@ metadata/_edit_lock_ = true
 
 [node name="Debug_Path_Node" type="Path2D" parent="."]
 z_index = 1
+curve = ExtResource("7_ss1oq")
 
 [node name="Update_Timer" type="Timer" parent="."]
 autostart = true
@@ -216,17 +219,20 @@ offset_left = -984.0
 offset_top = 352.0
 offset_right = -798.0
 offset_bottom = 402.0
+metadata/_edit_lock_ = true
 
 [node name="BackgroundLight" type="Sprite2D" parent="."]
 z_index = -3
 position = Vector2(-32, -64)
 texture = ExtResource("10_graqh")
 script = ExtResource("11_aijb1")
+metadata/_edit_lock_ = true
 
 [node name="BackgroundDark" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(-31, -63)
 texture = ExtResource("11_e0kwo")
+metadata/_edit_lock_ = true
 
 [node name="Clock" type="RichTextLabel" parent="."]
 offset_left = 209.0
@@ -235,6 +241,7 @@ offset_right = 920.0
 offset_bottom = 469.0
 bbcode_enabled = true
 script = ExtResource("12_yemy0")
+metadata/_edit_lock_ = true
 
 [node name="HttpGetLabHours" type="HTTPRequest" parent="Clock"]
 script = ExtResource("13_1la2h")
