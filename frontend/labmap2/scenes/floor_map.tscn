@@ -252,3 +252,4 @@ script = ExtResource("13_1la2h")
 [connection signal="timeout" from="Update_Timer" to="Devices/HTTPRequestNode" method="_on_update_timer_timeout"]
 [connection signal="timeout" from="Update_Timer" to="LogDisplay" method="_on_update_timer_timeout"]
 [connection signal="new_log" from="Logger" to="LogDisplay" method="_on_logger_new_log"]
+[connection signal="hours_ready" from="Clock/HttpGetLabHours" to="BackgroundLight" method="_on_http_get_lab_hours_hours_ready"]

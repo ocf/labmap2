@@ -1,5 +1,7 @@
 extends HTTPRequest
 
+signal hours_ready(hours: Dictionary)
+
 @onready var parser = YAMLParser.new()
 var bbcode_snippet: String = ""  # this will hold the formatted opening hours
 
@@ -15,7 +17,9 @@ func _on_request_completed(_result, response_code, _headers, body):
 		return
 	var yaml_text = body.get_string_from_utf8()
 	var parsed = parser.parse(yaml_text)
-	if typeof(parsed) != TYPE_DICTIONARY:
+	if typeof(parsed) == TYPE_DICTIONARY:
+		emit_signal("hours_ready", parsed)
+	else:
 		push_error("YAML did not parse into a dictionary")
 		return
 
