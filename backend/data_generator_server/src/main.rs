@@ -1,7 +1,11 @@
 use actix_web::{web, App, HttpServer, Responder, HttpResponse, middleware};
+use actix_web::rt::time;
 use std::process::Command;
 use std::sync::Mutex;
+use std::time::Duration;
+use std::fs;
 use serde::{Deserialize, Serialize};
+use reqwest;
 
 struct AppState {
     desktops: Mutex<Vec<CustomData>>,
@@ -60,6 +64,40 @@ async fn get_custom_data(state: web::Data<AppState>) -> impl Responder {
         .json(response)
 }
 
+async fn get_hours() -> impl Responder {
+    // Replace with local path to your YAML file
+    let path = "./data/hours.yaml";
+
+    match fs::read_to_string(path) {
+        Ok(contents) => HttpResponse::Ok()
+            .content_type("text/yaml")
+            .body(contents),
+        Err(_) => HttpResponse::InternalServerError().body("Failed to read YAML file"),
+    }
+}
+
+async fn refresh_hours_file() {
+    let url = "https://github.com/ocf/etc/raw/refs/heads/master/configs/hours.yaml";
+    let path = "./data/hours.yaml";
+
+    let client = reqwest::Client::new();
+    let mut interval = time::interval(Duration::from_secs(1800)); // every 30 min
+
+    loop {
+        interval.tick().await;
+
+        if let Ok(resp) = client.get(url).send().await {
+            if let Ok(body) = resp.text().await {
+                if let Err(err) = fs::write(path, body) {
+                    eprintln!("Failed to write file: {}", err);
+                } else {
+                    println!("Refreshed {}", path);
+                }
+            }
+        }
+    }
+}
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_LOG", "debug");
@@ -68,16 +106,19 @@ async fn main() -> std::io::Result<()> {
         desktops: Mutex::new(Vec::new()),
     });
 
+    tokio::spawn(refresh_hours_file());
+
     HttpServer::new(move || {
         App::new()
             .app_data(shared_state.clone()) // Register shared state with the app
-	    .wrap(middleware::NormalizePath::new(middleware::TrailingSlash::Trim)) 
+            .wrap(middleware::NormalizePath::new(middleware::TrailingSlash::Trim)) 
             .wrap(middleware::DefaultHeaders::new()
- 	    	.add((actix_web::http::header::CONTENT_ENCODING, "identity"))
+                .add((actix_web::http::header::CONTENT_ENCODING, "identity"))
             )
             .route("/api/generate", web::get().to(generate_data))
             .route("/api/set", web::post().to(set_custom_data))
             .route("/api/get", web::get().to(get_custom_data))
+            .route("/api/hours", web::get().to(get_hours))
             .route("/health", web::get().to(HttpResponse::Ok))
     })
 

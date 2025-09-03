@@ -8,7 +8,7 @@ var bbcode_snippet: String = ""  # this will hold the formatted opening hours
 func _ready():
 	request_completed.connect(_on_request_completed)
 
-	var url = "https://github.com/ocf/etc/raw/refs/heads/master/configs/hours.yaml"
+	var url = "https://labmap.ocf.berkeley.edu/api/hours"
 	request(url)
 
 func _on_request_completed(_result, response_code, _headers, body):
