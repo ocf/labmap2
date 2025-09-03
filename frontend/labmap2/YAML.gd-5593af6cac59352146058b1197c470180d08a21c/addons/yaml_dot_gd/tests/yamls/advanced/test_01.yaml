@@ -1,0 +1,11 @@
+player:
+  name: "Hero"
+  stats:
+    health: 100
+    mana: 50
+  inventory:
+    - sword
+    - shield
+    - 
+      name: "Health Potion"
+      value: 25

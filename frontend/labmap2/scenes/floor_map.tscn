@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=19 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Script" path="res://scripts/floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://dtlrn0pyxevuv" path="res://art/background.png" id="10_graqh"]
 [ext_resource type="Script" path="res://scripts/background_light.gd" id="11_aijb1"]
 [ext_resource type="Texture2D" uid="uid://cuaj5txrl38kg" path="res://art/background2.png" id="11_e0kwo"]
+[ext_resource type="Script" path="res://scenes/clock.gd" id="12_yemy0"]
+[ext_resource type="Script" path="res://scenes/http_get_lab_hours.gd" id="13_1la2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
 resource_name = "Floor Tiles"
@@ -225,6 +227,17 @@ script = ExtResource("11_aijb1")
 z_index = -4
 position = Vector2(-31, -63)
 texture = ExtResource("11_e0kwo")
+
+[node name="Clock" type="RichTextLabel" parent="."]
+offset_left = 209.0
+offset_top = 239.0
+offset_right = 920.0
+offset_bottom = 469.0
+bbcode_enabled = true
+script = ExtResource("12_yemy0")
+
+[node name="HttpGetLabHours" type="HTTPRequest" parent="Clock"]
+script = ExtResource("13_1la2h")
 
 [connection signal="result_ready" from="Devices/HTTPRequestNode" to="Devices" method="_on_http_request_node_result_ready"]
 [connection signal="timeout" from="Update_Timer" to="." method="_on_update_timer_timeout"]

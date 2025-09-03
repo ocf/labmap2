@@ -1,0 +1,7 @@
+items:
+  - string
+  - 42
+  - true
+  - 
+    key: value
+  - [1, 2, 3]

@@ -1,0 +1,7 @@
+level1:
+  level2:
+    level3:
+      key: value
+    list:
+      - item1
+      - item2

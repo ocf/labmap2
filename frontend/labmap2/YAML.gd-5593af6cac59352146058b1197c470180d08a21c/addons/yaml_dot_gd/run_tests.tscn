@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://513m63gknvq7"]
+
+[ext_resource type="Script" uid="uid://c6ke8e6it012n" path="res://assets/yaml_dot_gd/run_tests.gd" id="1_8r3vp"]
+
+[node name="RunTests" type="Node2D"]
+script = ExtResource("1_8r3vp")

@@ -1,0 +1,8 @@
+# Main configuration
+config:
+  # Display settings
+  resolution: "1920x1080"
+  
+  # Sound settings
+  volume: 80
+  mute: false
