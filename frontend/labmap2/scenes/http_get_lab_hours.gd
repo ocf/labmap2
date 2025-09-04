@@ -3,13 +3,27 @@ extends HTTPRequest
 signal hours_ready(hours: Dictionary)
 
 @onready var parser = YAMLParser.new()
+@onready var refresh_timer := Timer.new()
 var bbcode_snippet: String = ""  # this will hold the formatted opening hours
 
 func _ready():
 	request_completed.connect(_on_request_completed)
 
+	# Add a timer for periodic refresh
+	refresh_timer.wait_time = 600 # 10 minutes
+	refresh_timer.autostart = true
+	refresh_timer.one_shot = false
+	refresh_timer.timeout.connect(_on_refresh_timer_timeout)
+	add_child(refresh_timer)
+	# Initial fetch
+	_request_hours()
+
+func _request_hours():
 	var url = "https://labmap.ocf.berkeley.edu/api/hours"
 	request(url)
+
+func _on_refresh_timer_timeout():
+	_request_hours()
 
 func _on_request_completed(_result, response_code, _headers, body):
 	if response_code != 200:

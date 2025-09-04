@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.1 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="upu7u1TRUtgV5ll88ytz">
+    <mxGraphModel dx="1364" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UN89zv1u0d-u-18u6nM9-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-4" target="UN89zv1u0d-u-18u6nM9-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Verified Users&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="405" width="170" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-5" target="UN89zv1u0d-u-18u6nM9-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-5" target="UN89zv1u0d-u-18u6nM9-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="210" width="340" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Web REST API&lt;/h1&gt;&lt;div&gt;Accessible through the web.&lt;/div&gt;&lt;div&gt;Authenticates against LDAP/Kerberos by sending a hashed password.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;.env file on instance contains information used to connect&lt;/div&gt;&lt;div&gt;to ocflabmap2 MySQL server.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API functions include the ability to add configurations, remove configurations, and return configurations.&lt;/div&gt;&lt;div&gt;Returning Waddles configuration doesn&#39;t require authentication for Labmap2 frontend integration.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Certain API calls including audting of the MySQL server can only be used by those in ocfstaff or ocfroot group. Otherwise, those API calls will be denied/return error.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="320" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="260" width="340" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MySQL Server&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MySQL server owned by &#39;ocflabmap2&#39; user.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Contains database connecting usernames with Waddles&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sprite configuration or custom sprites&lt;/span&gt;&lt;/div&gt;&lt;div&gt;If both are present, custom sprites will be used.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Can be audited by direct access via knowledge of oclabmap2 credentials.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="270" width="320" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-9" target="UN89zv1u0d-u-18u6nM9-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="250" width="240" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Labmap2 Frontend&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="260" width="220" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-15" target="UN89zv1u0d-u-18u6nM9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-15" value="ocflabmap2&lt;div&gt;creds&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="783" y="315" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-18" target="UN89zv1u0d-u-18u6nM9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-18" value="GET,&lt;br&gt;POST,&lt;div&gt;DELETE&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="387" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="UN89zv1u0d-u-18u6nM9-19" target="UN89zv1u0d-u-18u6nM9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-19" value="GET" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="242.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="UN89zv1u0d-u-18u6nM9-28" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;LDAP/Kerberos&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="50" width="190" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

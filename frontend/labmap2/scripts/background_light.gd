@@ -9,6 +9,7 @@ extends Sprite2D
 @export var fade_duration = 2.0  # Duration of fade in seconds
 var target_alpha = 1.0  # The desired alpha value for the light background
 var today_hours: Array = []
+var last_day_checked: int = -1  # Tracks when we last updated day-hours
 
 func _ready():
 	# Set the initial alpha value based on the current time
@@ -48,6 +49,6 @@ func update_target_alpha():
 func _on_http_get_lab_hours_hours_ready(hours: Dictionary) -> void:
 	var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 	var now = Time.get_datetime_dict_from_system()
-	var day_name = days[now.weekday]
+	var day_name = days[now.weekday - 1]
 	today_hours = hours["regular"].get(day_name, [])
 	update_target_alpha()
