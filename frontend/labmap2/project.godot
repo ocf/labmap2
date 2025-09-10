@@ -23,6 +23,10 @@ HttpRequestNode="*res://scripts/http_request_node.gd"
 Logger="*res://scripts/logger.gd"
 Devices="res://scripts/devices.gd"
 
+[debug]
+
+settings/stdout/verbose_stdout=true
+
 [display]
 
 window/size/viewport_width=1920
