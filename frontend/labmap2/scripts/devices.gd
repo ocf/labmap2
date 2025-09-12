@@ -182,6 +182,7 @@ func _on_update_timer_timeout() -> void:
 	
 func _on_http_request_node_result_ready(endpoint: String) -> void:
 	# Connecting from HTTPRequestNode
+	print("_on_http_request_node_result_ready is ran")
 	if endpoint == $HTTPRequestNode.GENERATE:
 		_handle_generate_data()
 	elif endpoint == $HTTPRequestNode.GET:

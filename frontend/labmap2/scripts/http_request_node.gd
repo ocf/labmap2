@@ -9,6 +9,7 @@ extends HTTPRequest
 
 @onready var http_generate := HTTPRequest.new()
 @onready var http_get := HTTPRequest.new()
+@onready var update_timer := Timer.new()
 
 @onready var result_from_generate: Dictionary = {}
 @onready var result_from_get: Dictionary = {}
@@ -24,6 +25,11 @@ func _ready():
 	
 	http_generate.request_completed.connect(_on_generate_completed)
 	http_get.request_completed.connect(_on_get_completed)
+	
+	update_timer.wait_time = 5.0  # 5 seconds
+	update_timer.one_shot = false
+	update_timer.timeout.connect(_on_update_timer_timeout)
+	add_child(update_timer)
 
 	_send_http_request(http_generate, GENERATE)
 	_send_http_request(http_get, GET)
@@ -49,6 +55,7 @@ func _on_generate_completed(result, response_code, _headers, body):
 		emit_signal("result_ready", GENERATE)
 	else:
 		Logger.log("Error parsing generate response", "Error", "DATA_GENERATOR")
+	update_timer.start() 
 
 func _on_get_completed(result, response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
@@ -61,3 +68,15 @@ func _on_get_completed(result, response_code, _headers, body):
 		emit_signal("result_ready", GET)
 	else:
 		Logger.log("Error parsing get response", "Error", "DATA_GENERATOR")
+		
+func _on_update_timer_timeout() -> void:
+	var generate_status = http_generate.get_http_client_status()
+	var get_status = http_generate.get_http_client_status()
+	print("_on_update_timer_timeout is ran")
+	print("generate_status: ", generate_status, " get_status: ", get_status)
+	if generate_status in [0, 5]:
+		print("_send_http_request(http_generate, GENERATE) is ran")
+		_send_http_request(http_generate, GENERATE)
+	if get_status in [0, 5]:
+		print("_send_http_request(http_generate, GET) is ran")
+		_send_http_request(http_get, GET)
