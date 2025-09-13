@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c7hy84ujceanw" path="res://art/wall_sheet.png" id="3_85vmw"]
 [ext_resource type="Script" path="res://scripts/devices.gd" id="4_w6f35"]
 [ext_resource type="Script" path="res://scripts/logger.gd" id="7_5mbbv"]
-[ext_resource type="Curve2D" uid="uid://r8t7n7pqbnov" path="res://paths/to_misty.tres" id="7_ss1oq"]
+[ext_resource type="Curve2D" uid="uid://bsjyvruutkpjl" path="res://paths/to_mack.tres" id="7_uoy1h"]
 [ext_resource type="PackedScene" uid="uid://brs2mnfeqqby3" path="res://scenes/log_display.tscn" id="8_y67md"]
 [ext_resource type="Script" path="res://scripts/http_request_node.gd" id="9_wcwvr"]
 [ext_resource type="Texture2D" uid="uid://dtlrn0pyxevuv" path="res://art/background.png" id="10_graqh"]
@@ -205,7 +205,7 @@ metadata/_edit_lock_ = true
 
 [node name="Debug_Path_Node" type="Path2D" parent="."]
 z_index = 1
-curve = ExtResource("7_ss1oq")
+curve = ExtResource("7_uoy1h")
 
 [node name="Update_Timer" type="Timer" parent="."]
 autostart = true

@@ -72,11 +72,7 @@ func _on_get_completed(result, response_code, _headers, body):
 func _on_update_timer_timeout() -> void:
 	var generate_status = http_generate.get_http_client_status()
 	var get_status = http_generate.get_http_client_status()
-	print("_on_update_timer_timeout is ran")
-	print("generate_status: ", generate_status, " get_status: ", get_status)
 	if generate_status in [0, 5]:
-		print("_send_http_request(http_generate, GENERATE) is ran")
 		_send_http_request(http_generate, GENERATE)
 	if get_status in [0, 5]:
-		print("_send_http_request(http_generate, GET) is ran")
 		_send_http_request(http_get, GET)
