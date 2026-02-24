@@ -10,7 +10,7 @@ auto_sync = True
 
 def images():
     yield Image(name="backend", path=Path("/backend/data_generator_server/"), registry="ghcr")
-    yield Image(name="frontend", path=Path("/frontend/labmap2_server/"), registry="ghcr")
+    yield Image(name="frontend", path=Path("/frontend/"), registry="ghcr")
 
 
 def add_labmap_common(dep):
