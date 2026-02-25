@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://dgy3vf0xjb874"]
+[gd_scene load_steps=23 format=4 uid="uid://dgy3vf0xjb874"]
 
 [ext_resource type="Script" path="res://scripts/floor_map.gd" id="1_423c3"]
 [ext_resource type="Texture2D" uid="uid://cqt0vr61f2bxi" path="res://art/floor_sheet.png" id="1_eg3gw"]
@@ -14,6 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://cuaj5txrl38kg" path="res://art/background2.png" id="11_e0kwo"]
 [ext_resource type="Script" path="res://scenes/clock.gd" id="12_yemy0"]
 [ext_resource type="Script" path="res://scenes/http_get_lab_hours.gd" id="13_1la2h"]
+[ext_resource type="Texture2D" uid="uid://cm2iovdubwp6l" path="res://waddles.svg" id="13_io7p8"]
+[ext_resource type="Script" path="res://scripts/waddles_peek.gd" id="14_aes6m"]
+[ext_resource type="Curve2D" uid="uid://bbnm20mcstj5f" path="res://paths/waddles_peek.tres" id="15_ukbc7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqocb"]
 resource_name = "Floor Tiles"
@@ -245,6 +248,38 @@ z_index = -4
 position = Vector2(-31, -63)
 texture = ExtResource("11_e0kwo")
 metadata/_edit_lock_ = true
+
+[node name="Waddles" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-483, 216)
+rotation = -2.04029
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("13_io7p8")
+metadata/_edit_lock_ = true
+
+[node name="WaddlesPeek" type="Path2D" parent="."]
+z_index = 1
+position = Vector2(396, -281)
+rotation = 0.280998
+scale = Vector2(0.8, 0.8)
+curve = ExtResource("15_ukbc7")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="WaddlesPeek"]
+position = Vector2(-197.596, 266.499)
+rotation = -1.30657
+loop = false
+script = ExtResource("14_aes6m")
+
+[node name="Waddles" type="Sprite2D" parent="WaddlesPeek/PathFollow2D"]
+z_index = -1
+position = Vector2(173.872, 43.5333)
+rotation = 1.50526
+texture = ExtResource("13_io7p8")
+metadata/_edit_lock_ = true
+
+[node name="PeekInterval" type="Timer" parent="WaddlesPeek/PathFollow2D"]
+wait_time = 1800.0
+autostart = true
 
 [node name="Clock" type="RichTextLabel" parent="."]
 offset_left = 209.0
