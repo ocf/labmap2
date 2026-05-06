@@ -37,19 +37,28 @@ func _on_request_completed(_result, response_code, _headers, body):
 		push_error("YAML did not parse into a dictionary")
 		return
 
-	# Grab just the regular hours
+	# Check that regular hours are present
 	if parsed.has("regular"):
-		bbcode_snippet = build_regular_hours_bbcode(parsed["regular"])
+		bbcode_snippet = build_hours_bbcode(parsed)
 
-func build_regular_hours_bbcode(regular_dict: Dictionary) -> String:
+func build_hours_bbcode(hours_dict: Dictionary) -> String:
 	var snippet = ""
 	# Get today's weekday
 	var now = Time.get_datetime_dict_from_system()
+	var date = Time.get_date_string_from_system()
 	var weekday_index = now.weekday  # 1 = Monday, 7 = Sunday
 	var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 	var today_name = weekdays[weekday_index - 1]
 	# Get today's hours
-	var hours_list = regular_dict.get(today_name, null)
+	var hours_list = hours_dict.regular.get(today_name, null)
+	# Check if today's a holiday
+	for holiday in hours_dict.holidays:
+	if typeof(holiday.date) == TYPE_ARRAY:
+		if date >= holiday.date[0] and date <= holiday.date[1]:
+			hours_list = holiday.hours
+	else:
+		if date == holiday.date:
+			hours_list = holiday.hours
 	if hours_list == null:
 		snippet += "[right]%s: Closed[/right]\n" % today_name
 	else:
