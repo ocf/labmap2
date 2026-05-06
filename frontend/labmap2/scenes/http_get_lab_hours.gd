@@ -53,12 +53,12 @@ func build_hours_bbcode(hours_dict: Dictionary) -> String:
 	var hours_list = hours_dict.regular.get(today_name, null)
 	# Check if today's a holiday
 	for holiday in hours_dict.holidays:
-	if typeof(holiday.date) == TYPE_ARRAY:
-		if date >= holiday.date[0] and date <= holiday.date[1]:
-			hours_list = holiday.hours
-	else:
-		if date == holiday.date:
-			hours_list = holiday.hours
+		if typeof(holiday.date) == TYPE_ARRAY:
+			if date >= holiday.date[0] and date <= holiday.date[1]:
+				hours_list = holiday.hours
+		else:
+			if date == holiday.date:
+				hours_list = holiday.hours
 	if hours_list == null:
 		snippet += "[right]%s: Closed[/right]\n" % today_name
 	else:
