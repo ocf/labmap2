@@ -1,11 +1,3 @@
-FROM rust:alpine AS serverbuilder
-
-# TODO: build dependencies and labmap2_server in different layers
-WORKDIR /build
-COPY ./labmap2_server /build
-RUN cargo build --release
-
-
 FROM debian AS godotbuilder
 
 WORKDIR /build
@@ -20,13 +12,17 @@ RUN wget -qO godot.zip 'https://github.com/godotengine/godot-builds/releases/dow
 COPY ./labmap2 /build
 RUN mkdir static && godot -v --headless --import --export-release Web
 
-FROM alpine
+# pre-compress assets
+RUN mkdir static && \
+    godot -v --headless --import --export-release Web && \
+    find static -type f \
+         \( -name '*.wasm' -o -name '*.js' -o -name '*.html' -o -name '*.pck' \) \
+        -exec brotli --best --keep {} \; \
+        -exec gzip --best --keep {} \;
+
+FROM caddy:alpine
 
 WORKDIR /app
-COPY --from=serverbuilder /build/target/release/labmap2_server /app
 COPY --from=godotbuilder  /build/static /app/static
 
-ENV RUST_BACKTRACE=1
 EXPOSE 8080
-
-CMD ["./labmap2_server"]

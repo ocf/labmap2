@@ -1,0 +1,5 @@
+:8080
+root * /app/static
+file_server precompressed br gzip
+respond /health "ok"
+log
