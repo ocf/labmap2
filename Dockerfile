@@ -2,7 +2,14 @@ FROM rust:alpine AS serverbuilder
 
 # TODO: build dependencies and labmap2_server in different layers
 WORKDIR /build
-COPY ./labmap2_server /build
+
+# weird way to copy, but it keeps it in one layer
+COPY --parents \
+     ./server/./Cargo.toml \
+     ./server/./Cargo.lock \
+     ./server/./src \
+     /build
+RUN apk add --no-cache openssl-dev openssl-libs-static
 RUN cargo build --release
 
 
@@ -17,16 +24,22 @@ RUN wget -qO godot.zip 'https://github.com/godotengine/godot-builds/releases/dow
     unzip -j templ.tpz 'templates/*' -d ~/.local/share/godot/export_templates/4.3.stable && \
     rm godot.zip templ.tpz
 
-COPY ./labmap2 /build
+COPY ./client /build
 RUN mkdir static && godot -v --headless --import --export-release Web
 
-FROM alpine
+
+FROM python:3.9-alpine
 
 WORKDIR /app
-COPY --from=serverbuilder /build/target/release/labmap2_server /app
+COPY ./server/data_generator.py \
+     ./server/requirements.txt \
+     /app
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY --from=serverbuilder /build/target/release/labmap2-server /app
 COPY --from=godotbuilder  /build/static /app/static
 
 ENV RUST_BACKTRACE=1
 EXPOSE 8080
 
-CMD ["./labmap2_server"]
+CMD ["./labmap2-server"]

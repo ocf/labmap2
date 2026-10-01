@@ -16,7 +16,7 @@
           packages = [ pkgs.godotPackages_4_3.godot ];
           shellHook = ''
             git_root="$(git rev-parse --show-toplevel)"
-            godot_proj_dir="$git_root/frontend/labmap2"
+            godot_proj_dir="$git_root/client"
             ${pkgs.godotPackages_4_3.godot}/bin/godot --path "$godot_proj_dir" -e &
           '';
         };

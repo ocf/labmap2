@@ -8,3 +8,13 @@ devices in the OCF. Furthermore, the ability to customize setups in addition to 
 
 For more information about the scope of the project, please see the labmap2\_diagram included on the
 root directory of this git repo.
+
+
+## Running the server locally
+
+The server that hosts the API and labmap client WASM can be run with Docker:
+
+```
+docker build -t labmap2-server:latest .
+docker run --env-file .env -p 8081:8081 --name labmap2-server labmap2-server:latest
+```
