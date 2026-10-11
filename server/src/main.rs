@@ -99,11 +99,6 @@ async fn refresh_hours_file() {
     }
 }
 
-#[get("/")]
-async fn index() -> impl Responder {
-    NamedFile::open("static/labmap2.html")
-}
-
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_LOG", "debug");
@@ -127,7 +122,11 @@ async fn main() -> std::io::Result<()> {
             .route("/api/hours", web::get().to(get_hours))
             .route("/health", web::get().to(HttpResponse::Ok))
             .service(index) // serve client wasm
-            .service(Files::new("/", "static/").use_last_modified(true))
+            .service(Files::new("/", "static/")
+                .index_file("labmap2.html")
+                .use_last_modified(true)
+                .try_compressed()
+            )
     })
 
     .bind("0.0.0.0:8080")?

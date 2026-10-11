@@ -1,4 +1,10 @@
-{ stdenvNoCC, godotPackages_4_3 }:
+{
+  stdenvNoCC,
+  godotPackages_4_3,
+  brotli,
+  gzip,
+  zstd,
+}:
 
 let
   godot = godotPackages_4_3.godot;
@@ -11,6 +17,9 @@ stdenvNoCC.mkDerivation rec {
   nativeBuildInputs = [
     godot
     godotTemplates
+    brotli
+    gzip
+    zstd
   ];
 
   buildPhase = ''
@@ -22,6 +31,13 @@ stdenvNoCC.mkDerivation rec {
 
     mkdir -p static
     godot -v --headless --import --export-release Web
+
+    # pre-compress for web server to serve if client supports it
+    find static -type f \
+         \( -name '*.wasm' -o -name '*.js' -o -name '*.html' -o -name '*.pck' \) \
+        -exec brotli --best --keep {} \; \
+        -exec gzip --best --keep {} \; \
+        -exec zstd -19 --keep {} \;
 
     runHook postBuild
   '';
