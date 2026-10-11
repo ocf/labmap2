@@ -12,6 +12,10 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
+        packages = rec {
+          client = pkgs.callPackage ./client/package.nix {};
+        };
+
         devShells.default = pkgs.mkShell {
           packages = [ pkgs.godotPackages_4_3.godot ];
           shellHook = ''
