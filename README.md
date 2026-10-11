@@ -1,6 +1,6 @@
 # Labmap2
 
-![alt text](https://raw.githubusercontent.com/ocf/labmap2/main/labmap2_diagram.png "Labmap2 Diagram")
+![Architecture diagram of Labmap2's Godot frontend and backend APIs that provide information: Prometheus, LDAP, data generator server, and art server](labmap2_diagram.drawio.svg "Labmap2 Architecture Diagram")
 
 Labmap2 is a full rewrite of the OCF's labmap project, including new features and fixing old issues with
 the software. This program uses a combination of systems and languages in order to achieve the goal
