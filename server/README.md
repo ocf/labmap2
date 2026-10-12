@@ -1,8 +1,3 @@
-## Instructions
-
-    docker build -t data_generator_server:latest .
-    docker run --env-file .env -p 8081:8081 --name data_generator_server data_generator_server:latest
-
 ## Using the API (Example)
 Sending a POST /set command to the data generator server updates the list of overwrites, useful for when a device needs a custom status
 Statuses can currently be set to "online", "offline", and "out-of-order".
@@ -17,5 +12,4 @@ Statuses can currently be set to "online", "offline", and "out-of-order".
             }
         ]
     }' http://127.0.0.1:8080/set
-
 

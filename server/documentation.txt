@@ -1,10 +1,9 @@
-data_generator_server/
-This directory contains the source files for the data_generator_server. It runs on Rust using the
+This directory contains the source files for labmap2-server. It runs on Rust using the
 framework actix_web and simply spits out the response for the data_generator.py script.
 The .env file containing the authentication information to access the Prometheus server also
 sits in this directory.
 
-data_generator_server/data_generator.py
+data_generator.py
 
 This script queries the Prometheus server which hosts all the relevant data regarding desktop 'up'
 status as well as logged in users.
