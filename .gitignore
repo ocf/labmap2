@@ -1,3 +1,6 @@
+# we dont want to constantly update nixpkgs
+flake.lock
+
 server/.env
 server/target/
 
