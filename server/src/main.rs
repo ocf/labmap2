@@ -121,7 +121,6 @@ async fn main() -> std::io::Result<()> {
             .route("/api/get", web::get().to(get_custom_data))
             .route("/api/hours", web::get().to(get_hours))
             .route("/health", web::get().to(HttpResponse::Ok))
-            .service(index) // serve client wasm
             .service(Files::new("/", "static/")
                 .index_file("labmap2.html")
                 .use_last_modified(true)
