@@ -1,6 +1,6 @@
-use actix_web::{web, App, HttpServer, Responder, HttpResponse, middleware, get};
+use actix_web::{web, App, HttpServer, Responder, HttpResponse, middleware};
 use actix_web::rt::time;
-use actix_files::{NamedFile, Files};
+use actix_files::Files;
 use std::process::Command;
 use std::sync::Mutex;
 use std::time::Duration;
