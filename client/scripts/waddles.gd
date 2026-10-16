@@ -33,7 +33,7 @@ func _process(delta: float):
 	
 	if is_returning and progress_ratio <= 0.05:
 		waddles_sprite.modulate.a -= delta
-		if waddles_sprite.modulate.a == 0:
+		if waddles_sprite.modulate.a <= 0:
 			queue_free()
 
 func set_target_desktop(desktop_name: String):
