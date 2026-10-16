@@ -6,3 +6,6 @@ client/.godot/
 
 .venv/
 .idea/
+
+# nix build results
+**/result
